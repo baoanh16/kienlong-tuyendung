@@ -1,0 +1,16 @@
+{
+	"scripts": [
+		"bower_components/jquery/dist/jquery.min.js",
+		"bower_components/swiper/dist/js/swiper.min.js",
+		"_plugins/bgimg.js",
+		"_plugins/mapping-listener.js",
+		"_plugins/mapping.js"
+	],
+	"styles": [
+		"bower_components/font-awesome/css/brands.css",
+		"bower_components/font-awesome/css/regular.css",
+		"bower_components/font-awesome/css/solid.css",
+		"bower_components/swiper/dist/css/swiper.min.css",
+		"_plugins/grid.css"
+	]
+}
