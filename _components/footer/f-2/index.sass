@@ -1,0 +1,93 @@
+@import ../../_includes
+
+.canhcam-footer-2
+	p
+		margin-bottom: 0
+	.footer-content
+		padding: 3rem 0
+		color: #333
+		font-weight: 500
+		position: relative
+		h6
+			font-size: r(18px)
+			margin-bottom: 1rem
+			font-weight: 600
+		.slogan
+			.logo
+				a
+					display: block
+		.quote
+			font-size: r(12px)
+			line-height: 1.5rem
+		.social
+			ul
+				margin-bottom: 0
+				li
+					display: inline-block
+					+ li
+						margin-left: .5rem
+					a
+						width: 40px
+						height: 40px
+						background: #0f848d
+						color: #fff
+						display: block
+						text-align: center
+						line-height: 40px
+						font-size: 1.5rem
+						border-radius: 50%
+						transition: .3s all ease-in-out
+						&:hover
+							background: #0f848d
+
+	.copy-right
+		border-top: 1px solid darken(#fff,10%)
+		font-size: r(12px)
+		padding: 1rem 0
+		color: color-get($mau,text-4)
+		.bottom-menu
+			display: flex
+			justify-content: center
+			a
+				position: relative
+				color: #333
+				padding: 0 .5rem
+				&:first-child
+					&:after
+						content: ''
+						background: color-get($mau,text-4)
+						height: r(14px)
+						width: 1px
+						position: absolute
+						top: 2px
+						right: 0
+					padding-left: 0
+	// Khi lên Tablet
+	+media-breakpoint-up(md)
+		.slogan
+			.quote
+				padding-left: 2rem
+			.social-list
+				margin: 1rem 0 0 0
+	// Khi lên PC
+	+media-breakpoint-up(lg)
+		.copy-right
+			position: relative
+		.footer-content
+			.list-group
+				.list-group-item
+					padding: .15rem 0
+			.slogan
+				display: flex
+			.social
+				justify-content: center
+				ul
+					text-align: center
+					li
+						margin-bottom: 1rem
+	+media-breakpoint-up(xl)
+		.copy-right
+			.bottom-menu
+				white-space: nowrap
+				justify-content: flex-start
+

@@ -1,0 +1,37 @@
+
+.canhcam-footer-1
+	background: #edf5f6
+	padding: 2rem 0
+	.item
+		h3
+            font-size: r(18px)
+            color: #0f848d
+            font-weight: 400
+		+media-breakpoint-down(md)
+			&:first-child
+				margin-bottom: 2rem
+		+media-breakpoint-down(sm)
+			margin-bottom: 2rem
+			&:last-child
+				margin-bottom: 0
+		nav
+			.list-group-item
+				background: none
+				border: 0
+				padding: .25rem 0
+				&:first-child
+					padding-top: 0
+				a
+                    display: flex
+                    align-items: center
+                    font-size: r(13px)
+                    font-weight: 500
+                    color: #333
+                    text-decoration: none
+                    transition: all .2s ease-in-out
+                    &:before
+                        color: #0f848d
+                        +material('\f142')
+                        font-size: r(18px)
+                    &:hover
+                        color: #0f848d
