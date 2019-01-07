@@ -1,0 +1,61 @@
+.kienlong-phanHoiTuNTD
+    padding: 2rem 0
+    +media-breakpoint-up(lg)
+        padding: 3rem 0
+    .note
+        font-size: r(14px)
+    .kienlong-table
+        table
+            tbody
+                tr
+                    td
+                        &:first-child
+                            width: 5%
+                            text-align: center
+                            padding-left: .5rem
+                            font-size: r(16px)
+                            font-weight: 600
+.detail-container
+    position: fixed
+    top: 0
+    left: 0
+    opacity: 0
+    z-index: -3
+    width: 100%
+    transition: .5s all ease-in-out
+    height: 100%
+    background: rgba(0,0,0 ,.4)
+    +flex-center
+    &.active
+        opacity: 1
+        z-index: 10
+    .detail-wrapper
+        background: white
+        white-space: initial
+        max-width: 90%
+        padding: 1.5rem
+        position: relative
+        .title
+            font-weight: 400
+            text-transform: uppercase
+        p
+            margin-bottom: 0
+        .detail-close
+            cursor: pointer
+            position: absolute
+            top: 0
+            right: 0
+            width: 20px
+            height: 20px
+            background: #0f848d
+            em
+                color: #ffffff
+                -webkit-text-stroke-width: 1px
+                -webkit-text-stroke-color: white
+    +media-breakpoint-up(md)
+        .detail-wrapper
+            padding: r(36px) r(82px)
+            max-width: 600px
+            .title
+                font-size: r(30px)
+            

@@ -1,0 +1,45 @@
+.canhcam-news-1
+	padding: r(10px) null
+	background: #0f848d
+	color: #fff
+	.align-self-center
+		align-self: center
+	.news-title
+		margin-bottom: .3rem
+		font-size: r(15px)
+		text-transform: uppercase
+		font-weight: 500
+		+media-breakpoint-down(md)
+			text-align: center
+	.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				text-align: center
+				a
+					text-decoration: none
+					font-size: r(14px)
+					font-weight: 300
+					color: #fff
+	.swiper-nav
+		display: flex
+		justify-content: center
+		div
+			width: 2rem
+			height: 2rem
+			+flex-center
+	+media-breakpoint-up(lg)
+		.news-title
+			padding-right: 15px
+			margin-bottom: 0
+		.swiper-container
+			.swiper-wrapper
+				position: relative
+				.swiper-slide
+					text-align: left
+		.swiper-nav
+			justify-content: flex-end
+			div
+				width: auto
+				height: auto
+				&:focus
+					outline: none

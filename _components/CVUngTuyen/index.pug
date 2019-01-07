@@ -1,0 +1,35 @@
+section.kienlong-cvungtuyen
+    .container
+        .row
+            .col
+                .kienlong-title
+                    h1.title Công việc đã ứng tuyển
+                .note
+                    p 
+                        b Lưu ý: 
+                        | Bạn không xem được việc làm đã hết hạn đăng tuyển hoặc tạm ngưng nhận hồ sơ 
+        .row
+            .col
+                .kienlong-table
+                    table
+                        thead
+                            tr
+                                th STT
+                                th Vị trí tuyển dụng
+                                th Khu vực
+                                th Hạn nộp hồ sơ
+                                th Ngày ứng tuyển
+                                th Xóa
+                        tbody
+                            -for(i=0;i<18;i++)
+                                tr
+                                    td=i
+                                    td Giám đốc phòng giao dịch
+                                    td Tp. Hồ Chí Minh
+                                    td 06/09/2018
+                                    td 06/09/2018
+                                    td
+                                        a(href="javascript:void(0)") Xóa
+        .row
+            .col
+                include ../pagination/index.pug
