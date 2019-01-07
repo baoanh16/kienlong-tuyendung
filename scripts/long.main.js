@@ -1,6 +1,6 @@
 let slider = {
     newsSlide: () => {
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.canhcam-news-1 .swiper-container', {
             slidesPerView: 2,
             spaceBetween: 20,
             navigation: {
@@ -30,8 +30,17 @@ let page = {
             $(this).parents('.detail-container').removeClass('active')
         })
     },
+    levelRange: () => {
+        let i = $('.member-wrapper .member-level .line-level').attr('data-level')
+        $('.member-wrapper .member-level .line-level').find('span').css({
+            'width': i
+        })
+        console.log(i);
+
+    },
     init: () => {
         page.modalPHNTD()
+        page.levelRange()
     }
 }
 

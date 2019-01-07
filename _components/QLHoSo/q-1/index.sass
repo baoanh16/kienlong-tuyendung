@@ -1,38 +1,41 @@
 .kienlong-QLHoSo-1
-    padding: 2rem 0
+    padding: 2rem 0 0
     +media-breakpoint-up(lg)
-        padding: 3rem 0
-    .member-wrapper
-        padding: 1.5rem
-        background: #f8f8f8
-        .member-avatar
-            width: 100px
-            height: 100px
-            border-radius: 50%
-            overflow: hidden
-            margin: 0 auto
-            border: 2px solid #0f848d
-            box-shadow: 0 0 5px #0000006b
-            img
-                width: 100%
-        .member-name
-            margin-top: 1.5rem
-            text-align: center
-            h5
-                font-size: r(16px)
-                font-weight: 700
-                text-transform: uppercase
-                color: #0f848d
-        .member-info
-            ul
-                list-style: none
-                li
-                    display: flex
-                    align-items: baseline
-                    em
-                        color: #0f848d
-                        padding-right: .75rem
-                    p
-                        font-size: r(14px)
+        padding: 3rem 0 1rem
+    .list-item
+        margin-top: 2rem
+        .item
+            margin-bottom: r(30px)
+            .box-item
+                border: 1px solid #0f848d
+                text-align: center
+                padding: 1rem
+                .number
+                    h3
+                        font-size: r(60px)
                         margin-bottom: 0
-                        font-weight: 400
+                        font-weight: 500
+                        color: #d73648
+                .page-name
+                    h4
+                        font-size: r(16px)
+                        text-transform: uppercase
+                .view-detail
+                    a
+                        text-decoration: underline
+                        text-transform: uppercase
+                        font-weight: 600
+                        font-size: r(14px)
+                        color: #00717c
+                    margin-top: 1.5rem
+    +media-breakpoint-up(lg)
+        .list-item
+            margin-top: 0
+            .item
+                .box-item
+                    .number
+                        h3
+                            font-size: r(100px)
+                            line-height: r(100px)
+                    .view-detail
+                        margin-top: 2rem
