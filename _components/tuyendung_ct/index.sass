@@ -1,0 +1,224 @@
+.kienlong-tuyendung-ct
+    padding: r(43px) 0 r(60px)
+    h2
+        font-size: r(24px)
+        color: #0f848d
+        font-weight: 700
+        margin-bottom: r(19px)
+    time
+        font-size: r(13px)
+        color: #999999
+        display: flex
+        align-items: baseline
+        
+        &:before
+            +fontawesome('\f073',$faf)
+            font-size: r(12px)
+            margin-right: r(4px)
+    h3
+        font-weight: 600
+        color: #0f848d
+        margin-top: r(20px)
+        margin-bottom: 1rem
+        font-size: 1rem
+        span
+            font-size: r(15px)
+            color: #333333
+            margin-left: r(11px)
+            font-weight: 400
+    .brief-info
+        table
+            width: 100%
+            table-layout: fixed
+            tr
+                td
+                    padding: r(12px) 0
+                    font-size: r(15px)
+                    color: #333333
+                    &:first-child
+                        width: 35%
+                        padding-left: r(34px)
+                        font-weight: 600
+                &:nth-child(2n-1)
+                    background: #f5f5f5
+        @media (max-width: 576px)
+            table
+                tr
+                    td
+                        font-size: r(13px)
+                        padding-left: 0.75rem
+                        padding-right: 0.75rem
+                        &:first-child
+                            padding-left: 0.75rem
+                            padding-right: 0
+                            width: 40%
+    .job-info
+        ul
+            list-style: none
+            margin-bottom: r(23px)
+            li
+                padding-left: r(25px)
+                font-size: r(15px)
+                color: #333333
+                line-height: r(24px)
+                &:before
+                    +fontawesome('\f111',$faf)
+                    margin-left: r(-25px)
+                    width: r(25px)
+                    font-size: r(8px)
+                    color: #999999
+                &:not(:last-child)
+                    margin-bottom: r(10px)
+        @media (max-width: 576px)
+            ul
+                li
+                    font-size: r(13px)
+                    &:before
+                        font-size: r(6px)
+    .button-group
+        margin-top: r(17px)
+        display: flex
+        justify-content: space-between
+        a
+            display: block
+            padding: r(16px) r(47px)
+            text-transform: uppercase
+            color: #0f848d
+            font-size: r(15px)
+            border: solid 2px #0f848d
+            text-align: center
+            margin-right: r(30px)
+            &:hover,&:first-child
+                background: #0f848d
+                color: white
+        @media (max-width: 768px)
+            a
+                padding: r(16px)
+        @media (max-width: 576px)
+            flex-wrap: wrap
+            a
+                flex: 0 0 calc(50% - 15px)
+                margin-right: 0
+                margin-bottom: 1.5rem
+        @media (max-width: 400px)
+            a
+                flex: 0 0 100%
+    .others-list
+        h2
+            font-size: r(18px)
+            color: #0f848d
+            text-transform: uppercase
+            font-weight: 600
+            padding-bottom: r(11px)
+            border-bottom: 3px solid #0f848d
+            margin-bottom: r(23px)
+        h3
+            color: #333333
+            font-size: r(16px)
+            font-weight: 400
+            margin-top: r(18px)
+            margin-bottom: 0
+        .others-item
+            padding-bottom: r(12px)
+            border-bottom: 1.2px dashed #cccccc
+            margin-top: r(18px)
+        @media (max-width: 992px)
+            margin-top: 2rem
+            .list
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                .others-item
+                    flex: 0 0 calc(50% - 15px)
+        @media (max-width: 400px)
+            .list
+                .others-item
+                    flex: 0 0 calc(100%)
+.friend-sharing
+    max-width: r(730px) !important
+    height: r(700px) !important
+    padding: r(35px) 0
+    h2
+        text-align: center
+        text-transform: uppercase
+        font-size: r(30px)
+        color: #333333
+        font-weight: 400
+    .modal-close
+        position: absolute
+        display: flex
+        right: -1px
+        top: r(-35px)
+        background: #0f848d
+        width: r(20px)
+        height: r(20px)
+        align-items: center
+        cursor: pointer
+        span
+            color: #ffffff
+            display: flex
+            width: 100%
+            align-items: center
+            justify-content: center
+    .wrapform
+        > div[id]
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: r(420px)
+            margin: 0 auto
+            .form-group
+                display: flex
+                flex-direction: column
+                width: 100%
+                margin-bottom: r(21px)
+                label
+                    margin-bottom: r(15px)
+                    font-size: r(14px)
+                    font-weight: 500
+                input
+                    height: r(40px)
+                    padding-left: r(20px)
+                    color: #999999
+                    font-size: r(13px)
+                    &::placeholder
+                        color: #999999
+                        font-size: r(13px)
+                input[type='submit']
+                    padding-left: 0
+                    display: flex
+                    width: r(125px)
+                    color: white
+                    text-transform: uppercase
+                    font-size: r(14px)
+                    font-weight: 600
+                    justify-content: center
+                    align-items: center
+                    background: #0f848d
+                    border: 0
+                    margin: auto
+                textarea
+                    padding-top: r(10px)
+                    padding-left: r(20px)
+                    padding-right: r(20px)
+                    font-size: r(13px)
+                    color: #999999
+                    height: r(160px)
+                img
+                    width: max-content
+                    max-width: 100%
+                span
+                    font-style: italic
+                    font-size: r(13px)
+                    color: #666666
+    @media (max-width: 768px)
+        max-width: r(500px) !important
+    @media (max-width: 576px)
+        max-width: 90% !important
+        .iziModal-content
+            padding: 0 15px !important
+        .wrapform
+            > div[id]
+                max-width: 100%
+    @media (max-width: 400px)
+        height: 100% !important

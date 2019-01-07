@@ -36,5 +36,18 @@ $(document).ready(function () {
 
     $('.kienlong-header-1 .menu-toggle').on('click',function(){
         $('.kienlong-header-1 .bottom-nav').toggleClass('active')
-    })
+	})
+	
+	$('.friend-sharing').iziModal({
+		radius: 0,
+		transitionIn: "fadeInDown",
+		transitionOut: "fadeOutUp"
+	})
+	$(document).on('click', '.kienlong-tuyendung-ct .btn-share', function (event) {
+		event.preventDefault();
+		$('.friend-sharing').iziModal('open');
+	});
+	$(document).on('click', '.friend-sharing .modal-close', function (event) {
+		$('.friend-sharing').iziModal('close');
+	});
 });
