@@ -1,0 +1,35 @@
+.kienlong-QLHoSo-2
+    padding-bottom: 2rem
+    +media-breakpoint-up(lg)
+        padding-bottom: 4rem
+    .list-item
+        .item
+            a
+                text-decoration: none
+                figure
+                    .item-img
+                        overflow: hidden
+                        img
+                            transition: .4s all ease-in-out
+                            width: 100%
+                    figcaption
+                        padding-top: 1rem
+                        .item-title
+                            h5
+                                margin-bottom: 0
+                                color: #333333
+                                font-size: r(15px)
+                                font-weight: 500
+                        .time
+                            time
+                                font-size: r(13px)
+                                color: #00717c
+                    &:hover
+                        .item-img
+                            img
+                                transform: scale(1.1)
+    .view-more
+        text-align: center
+        margin-top: 1.5rem
+        .kienlong-link
+            padding: .4rem 3rem

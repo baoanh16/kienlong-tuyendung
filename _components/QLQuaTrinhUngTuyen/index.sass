@@ -1,0 +1,112 @@
+.kienlong-QLQTUngTuyen
+    padding: 2rem 0
+    +media-breakpoint-up(lg)
+        padding: 3rem 0 1rem
+    .form-wrapper
+        + .form-wrapper
+            margin-top: 2rem
+        .form-title
+            h5
+                font-size: r(16px)
+                font-weight: 700
+                text-transform: uppercase
+            margin-bottom: .75em
+        .form-box
+            padding: 1.5rem
+            box-shadow: 0 0 5px #ccc
+            font-size: r(14px)
+            .form-container
+                .form-row
+                    .form-col
+                        padding: .2rem
+                        white-space: nowrap
+                        p
+                            margin-bottom: 0
+                        input
+                            width: 100%
+                            padding: .4rem 1rem
+                            border: 1px solid #d7d7d7
+                        .list-button
+                            margin-top: 1rem
+                            div
+                                + div
+                                    margin-top: 10px
+                            .btn-update
+                                a
+                                    &:before
+                                        +material('\f3eb')
+                                        margin-right: .3rem
+                                    width: 100%
+                                    display: inline-block
+                                    padding: .25rem
+                                    font-weight: 600
+                                    text-transform: uppercase
+                                    text-align: center
+                                    border: 2px solid #0f848d
+                                    color: #0f848d
+                                    transition: .4s all ease-in-out
+                                    &:hover
+                                        background: #0f848d
+                                        color: #fff
+                            .btn-cancel
+                                a
+                                    &:before
+                                        +material('\f156')
+                                        margin-right: .3rem
+                                    width: 100%
+                                    display: inline-block
+                                    padding: .25rem
+                                    font-weight: 600
+                                    text-transform: uppercase
+                                    text-align: center
+                                    border: 2px solid #d73648
+                                    color: #d73648
+                                    transition: .4s all ease-in-out
+                                    &:hover
+                                        background: #d73648
+                                        color: #fff
+                            .btn-save
+                                a
+                                    &:before
+                                        +material('\f12c')
+                                        margin-right: .3rem
+                                    width: 100%
+                                    display: inline-block
+                                    padding: .25rem
+                                    font-weight: 600
+                                    text-transform: uppercase
+                                    text-align: center
+                                    border: 2px solid #0f848d
+                                    background: #0f848d
+                                    color: #fff
+                                    transition: .4s all ease-in-out
+                                    &:hover
+                                        color: #0f848d
+                                        background: #fff
+    +media-breakpoint-up(sm)
+        .form-wrapper
+            .form-box
+                .form-container
+                    .form-row
+                        display: flex
+                        align-items: center
+                        .form-col
+                            width: 100%
+                            padding: .45rem
+                            &:first-child
+                                flex: 0 0 200px
+                            
+    +media-breakpoint-up(md)
+        .form-wrapper
+            .form-box
+                .form-container
+                    .form-row
+                        .form-col
+                            .list-button
+                                display: flex
+                                div
+                                    a
+                                        min-width: 150px
+                                    + div
+                                        margin-top: 0
+                                        margin-left: 30px
