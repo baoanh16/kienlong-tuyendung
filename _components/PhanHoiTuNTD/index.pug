@@ -1,0 +1,45 @@
+section.kienlong-phanHoiTuNTD
+    .container
+        .row
+            .col
+                .kienlong-title
+                    h1.title Phản hồi từ nhà tuyển dụng
+                .note
+                    p 
+                        b Lưu ý: 
+                        | Bạn không xem được việc làm đã hết hạn đăng tuyển hoặc tạm ngưng nhận hồ sơ 
+        .row
+            .col
+                .kienlong-table
+                    table
+                        thead
+                            tr
+                                th STT
+                                th Nhà tuyển dụng
+                                th Ngày xem
+                                th Phản hồi
+                        tbody
+                            -for(i=0;i<18;i++)
+                                tr
+                                    td=i
+                                    td Giám đốc phòng giao dịch
+                                    td 24/10/1999
+                                    td
+                                        a(href="javascript:void(0)").detail Chi tiết
+                                        .detail-container
+                                            .detail-wrapper
+                                                .content
+                                                    h2.title KienLongBank Phản hồi
+                                                    p Mời bạn Nguyễn Lâm Quan Duy, đến trụ sở Kienlongbank để tham gia phỏng vấn vị trí Nhân viên giao dịch.
+                                                    P 
+                                                        b Thời gian: 
+                                                        | 24/10/1999
+                                                    P 
+                                                        b Địa điẻm: 
+                                                        | Ngân hàng Kiên Long Quận 1
+                                                .detail-close
+                                                    em.lnr.lnr-cross
+                                                
+        .row
+            .col
+                include ../pagination/index.pug
