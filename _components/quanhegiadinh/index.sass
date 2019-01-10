@@ -1,0 +1,54 @@
+.quanhegiadinh
+    .wrap-form
+        > div[id]
+            .btn-addcontent
+                margin-left: 30%
+                @media (max-width: 992px)
+                    margin-left: auto
+                    margin-right: auto
+            .form-group
+                label
+                    flex: 0 0 30%
+                .settingcontrol
+                    flex: 0 0 70%
+                &.frm-select
+                    .settingcontrol
+                        flex-direction: row
+                        label
+                            margin: 0 1rem 0 1.5rem
+                            flex: 0 0 18%
+                        select,input
+                            width: r(120px)
+                        @media (max-width: 768px)
+                            flex-direction: row
+                            label
+                                flex: 0 0 10%
+                            select,input
+                                width: 100%
+                        @media (max-width: 380px)
+                            flex-direction: column
+                            select
+                                &:first-child
+                                    margin-bottom: 0
+                &.frm-btnwrap
+                    margin-left: 30%
+                    justify-content: space-between !important
+                    .frm-abort
+                        margin-left: 0
+                    .frm-complete
+                        margin-left: 0
+                        
+                @media (max-width: 1200px)
+                    .frm-abort
+                        margin-left: 0.5rem !important
+                    .frm-complete
+                        margin-left: 0.5rem !important
+                @media (max-width: 768px)
+                    flex-direction: column
+                    &.frm-btnwrap
+                        flex-direction: row
+                        margin-left: 0 !important
+                @media (max-width: 576px)
+                    &.frm-btnwrap
+                        .frm-abort,.frm-complete
+                            margin-left: 0 !important
