@@ -268,6 +268,11 @@
             justify-content: center
             align-items: center
             position: relative
+            &.active,&:hover
+                @media (min-width: 992px)
+                    background: #0d7078
+                    .sub-menu
+                        display: block
             .menu-link
                 color: white
                 font-size: r(15px)
@@ -285,6 +290,7 @@
                 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
                 padding-top: 3px
                 display: none
+                z-index: 2
                 &:before
                     position: absolute
                     content: ''

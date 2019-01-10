@@ -1,0 +1,157 @@
+.kienlong-dangky-1
+    padding: r(44px) 0 r(60px)
+    h2
+        font-size: r(30px)
+        text-align: center
+        text-transform: uppercase
+        color: #333333
+        font-weight: 400
+        margin-bottom: r(40px)
+    .wrap-form
+        padding: r(26px) r(30px) r(30px) r(30px)
+        background: #edf5f6
+        span 
+            color: #00717c
+            font-size: r(14px)
+            font-weight: 600
+            margin-bottom: r(27px)
+            display: block
+            @media (max-width: 576px)
+                margin-bottom: 0
+        .warning 
+            span
+                font-style: italic
+                color: #666666
+                font-size: r(13px)
+                font-weight: 500
+                margin-bottom: 0
+                small
+                    color: #d73648
+        .captcha
+            margin-top: 1rem
+            text-align: center
+            img
+                max-width: 100%
+        input[type="submit"]
+            width: r(125px)
+            height: r(40px)
+            background: #d73648
+            color: #ffffff
+            text-transform: uppercase
+            border: 0
+            font-size: r(14px)
+            font-weight: 600
+            margin-top: r(18px)
+            display: block
+            margin-left: auto
+            margin-right: auto
+        .form-horizontal
+            .form-group
+                display: flex
+                justify-content: space-between
+                margin-bottom: r(4px)
+                label
+                    font-size: r(14px)
+                    font-weight: 500
+                    color: #333333
+                    line-height: r(40px)
+                    margin-bottom: 0
+                    display: flex
+                    flex: 0 0 35%
+                    small
+                        color: #d73648
+                .settingcontrol
+                    display: flex
+                    flex-direction: column
+                    flex: 0 0 65%
+                    input,select
+                        width: 100%
+                        height: r(40px)
+                        margin-bottom: 1rem
+                        font-size: r(13px)
+                        padding-left: r(21px)
+                        padding-right: r(10px)
+                        color: #999999
+                        &::placeholder
+                            font-size: r(13px)
+                            line-height: r(40px)
+                    span
+                        font-size: r(13px)
+                        color: #333333
+                    a
+                        text-decoration: underline
+                        font-size: r(14px)
+                        font-weight: 600
+                        color: #333333
+                        text-underline-position: under
+                        margin-bottom: r(11px)
+                &:nth-child(6)
+                    .settingcontrol
+                        flex-direction: row
+                        label
+                            line-height: r(40px)
+                            font-size: r(14px)
+                            color: #666666
+                            margin-left: r(9px)
+                            margin-right: r(29px)
+                            display: block
+                            flex: initial
+                        input
+                            width: auto
+                            display: inline-block
+                @media (max-width: 576px)
+                    flex-direction: column
+                    label
+                        line-height: 2
+                    .settingcontrol
+                        input,select
+                            padding-left: r(10px)
+                    &:nth-child(6)
+                        input
+                            margin-bottom: 0
+        @media (max-width: 992px)
+            margin-bottom: 2.5rem
+    .welcome-content-wrapper
+        p
+            font-size: r(14px)
+            font-weight: 600
+            color: #0f848d
+            line-height: r(20px)
+        .welcome-item
+            padding: r(26px) r(48px) r(32px) r(25px)
+            background-image: url('.././img/dangky/bg.png')
+            border-top-right-radius: 10px
+            display: flex
+            margin-bottom: r(18px)
+            .icon
+                margin-right: r(22px)
+                margin-top: r(-12px)
+                i
+                    font-size: r(54.79px)
+                    color: #ffffff
+            .text
+                h3
+                    color: #ffffff
+                    font-size: r(15px)
+                    font-weight: 700
+                    margin-bottom: r(18px)
+                    text-transform: uppercase
+                p
+                    color: #ffffff
+                    font-weight: 300
+                    font-size: r(14px)
+                    line-height: r(18px)
+            @media (max-width: 411px)
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: r(20px)
+                .icon
+                    margin-right: 0
+                .text
+                    text-align: justify
+                    h3
+                        text-align: center
+                    p
+                        text-align-last: center
+            

@@ -1,0 +1,39 @@
+section.kienlong-hoidap-1
+    article
+        .container
+            .row
+                .col-12
+                    h1 Hỏi đáp
+            .row
+                .col-lg-8
+                    .faq-list
+                        -for(i=0;i<4;i++)
+                            .faq-item
+                                .question
+                                    p Tôi đã thi tốt nghiệp đại học và đang trong thời gian chờ nhận bằng thì có được tham gia ứng tuyển vào Ngân hàng Kiên Long hay không?
+                                .answer
+                                    p Bạn phải gửi Bảng điểm thay thế bằng chuyên môn và nếu được trúng tuyển thì bạn phải cam kết thời hạn cụ thể (không quá 03 tháng) để bổ sung bằng tốt nghiệp. 
+                .col-lg-4
+                    .wrap-form
+                        h2 Gửi câu hỏi
+                        #id
+                            .form-group
+                                label Họ tên
+                                input(type="text")
+                            .form-group
+                                label Email
+                                input(type="text")
+                            .form-group
+                                label Số điện thoại
+                                input(type="text")
+                            .form-group
+                                label Tiêu đề
+                                input(type="text")
+                            .form-group
+                                label Nội dung
+                                textarea(cols="30", rows="10")
+                            .form-group
+                                img(src="./img/capcha.png", alt="")
+                            .form-group.frm-btnwrap
+                                .frm-btn
+                                    input(type="submit", value="Gửi thông tin")

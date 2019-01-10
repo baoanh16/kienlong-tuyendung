@@ -1,0 +1,96 @@
+.kienlong-lienhe-1
+    padding: r(44px) 0 r(60px)
+    h2
+        font-size: r(30px)
+        text-align: center
+        text-transform: uppercase
+        color: #333333
+        font-weight: 400
+        margin-bottom: r(20px)
+    p
+        font-size: r(15px)
+        color: #333333
+        line-height: r(24px)
+    .item
+        margin-top: r(30px)
+        padding: r(30px) r(29px)
+        background-image: url('.././img/lienhe/bg.jpg')
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06)
+        height: r(181px)
+        display: flex
+        align-items: center
+        figure
+            display: flex
+            align-items: center
+            margin-bottom: 0
+            figcaption
+                margin-left: r(29px)
+            h3,a
+                font-size: r(15px)
+                text-transform: uppercase
+                font-weight: 600
+            p 
+                font-size: r(14px)
+                color: #333333
+            ul
+                list-style: none
+                margin-bottom: 0
+                li
+                    font-size: r(14px)
+                    color: #333333
+        @media (max-width: 500px)
+            height: auto
+            figure
+                flex-direction: column
+                figcaption
+                    margin-left: 0
+                img
+                    margin-bottom: 1.5rem
+                h3,a
+                    text-align: center
+                    display: block
+                p
+                    text-align: justify
+                    text-align-last: center
+    .col-lg-6
+        &:first-child
+            .item
+                border: 1px solid #0f848d
+                figure
+                    h3
+                        color: #0f848d
+                    ul
+                        li
+                            &:before
+                                margin-right: r(13px)
+                            &:first-child
+                                &:before
+                                    +material('\f34e')
+                                    color: #0f848d
+                            &:nth-child(2)
+                                &:before
+                                    +material('\f3f2')
+                                    color: #0f848d
+                            &:last-child
+                                &:before
+                                    +material('\f1ee')
+                                    color: #0f848d
+        &:nth-child(2)
+            .item
+                border: 1px solid #475993
+                figure
+                    a
+                        color: #475993
+        &:nth-child(3)
+            .item
+                border: 1px solid #d8362a
+                figure
+                    a
+                        color: #d8362a
+        &:nth-child(4)
+            .item
+                border: 1px solid #018fe5
+                figure
+                    a
+                        color: #018fe5
+                        

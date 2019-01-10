@@ -1,0 +1,133 @@
+.kienlong-dangnhap-1
+    padding: r(44px) 0 r(60px)
+    h2
+        font-size: r(30px)
+        text-align: center
+        text-transform: uppercase
+        color: #333333
+        font-weight: 400
+        margin-bottom: r(40px)
+    .login-form
+        background: #edf5f6
+        padding: r(30px)
+    .form-horizontal
+        .form-group
+            display: flex
+            align-items: center
+            margin-bottom: r(20px)
+            label
+                font-size: r(13px)
+                font-weight: 500
+                color: #00717c
+                margin-bottom: 0
+            input,select
+                width: 100%
+                height: r(40px)
+                font-size: r(13px)
+                padding-left: r(13px)
+                padding-right: r(10px)
+                color: #999999
+                &::placeholder
+                    font-size: r(13px)
+                    line-height: r(40px)
+                    font-style: italic
+            input[type="checkbox"]
+                width: 16px
+                border: 1px solid #0f848d
+                margin-right: r(11px)
+            input[type="submit"]
+                width: r(125px)
+                margin: auto
+                color: #ffffff
+                font-size: r(14px)
+                font-weight: 600
+                padding: 0
+                background: #0f848d
+                border: 0
+            a
+                font-size: r(13px)
+                color: #00717c
+                display: block
+                margin: auto
+                text-decoration: underline
+                text-underline-position: under
+            &:last-child
+                margin-bottom: 0
+    .no-account
+        margin-top: r(19px)
+        p
+            margin-bottom: 0
+            font-size: r(14px)
+            color: #666666
+            a,span
+                text-transform: uppercase
+                color: #00717c
+                font-weight: 700
+        @media (max-width: 345px)
+            p
+                font-size: r(13px)
+    .social-login
+        margin-top: r(17px)
+        ul
+            list-style: none
+            display: flex
+            justify-content: space-between
+            li
+                a
+                    span
+                        font-size: r(14px)
+                        color: #333333
+                        margin-left: r(7px)
+                    @media (max-width: 345px)
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        span
+                            margin-left: 0
+                            margin-top: r(7px)
+    .welcome-content-wrapper
+        p
+            font-size: r(14px)
+            font-weight: 600
+            color: #0f848d
+            line-height: r(20px)
+            &:last-child
+                text-align: center
+        .welcome-list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        .welcome-item
+            flex: 0 0 calc(33.333333% - 15px)
+            max-width: calc(33.333333% - 15px)
+            background-image: url('.././img/dangky/bg.png')
+            display: flex
+            margin-bottom: r(30px)
+            flex-direction: column
+            padding: r(39px) r(12px)
+            align-items: center
+            .icon
+                i
+                    font-size: r(54.79px)
+                    color: #ffffff
+            .text
+                h3
+                    color: #ffffff
+                    font-size: r(14px)
+                    font-weight: 700
+                    margin-bottom: r(18px)
+                    text-transform: uppercase
+                    text-align: center
+                p
+                    color: #ffffff
+                    font-weight: 300
+                    font-size: r(14px)
+                    line-height: r(18px)
+                    text-align: center
+            @media (max-width: 768px)
+                flex: 0 0 calc(50% - 15px)
+                max-width: calc(50% - 15px)
+            @media (max-width: 480px)
+                flex: 0 0 100%
+                max-width: 100%

@@ -1,0 +1,31 @@
+.kinhnghiem_lamviec
+    .wrap-form
+        > div[id]
+            .form-group
+                label
+                    flex: 0 0 30%
+                .settingcontrol
+                    flex: 0 0 70%
+                &.frm-select
+                    .settingcontrol
+                        flex-direction: row
+                        label
+                            margin-left: 1rem
+                            flex: 0 0 18%
+                        select,input
+                            width: r(120px)
+                        @media (max-width: 768px)
+                            flex-direction: column
+                            label
+                                flex: 0 0 25%
+                                margin-left: 0
+                            select,input
+                                width: 100%
+                &.frm-btnwrap
+                    margin-left: 30%
+                @media (max-width: 768px)
+                    flex-direction: column
+                    &.frm-btnwrap
+                        flex-direction: row
+                        margin-left: 0
+                        justify-content: center !important

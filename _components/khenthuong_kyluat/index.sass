@@ -1,0 +1,237 @@
+.nav-qlhs-toggle
+    display: flex
+    padding: r(15px) r(15px) r(15px) r(22px)
+    background: #0f848d
+    color: white
+    font-size: r(14px)
+    align-items: center
+    justify-content: space-between
+    @media (min-width: 992px)
+        display: none
+.nav-qlhs
+    display: none
+    flex-direction: column
+    a
+        display: block
+        padding: r(15px) r(15px) r(15px) r(22px)
+        background: #e3f3f4
+        color: #0f848d
+        font-size: r(14px)
+        margin-bottom: r(1px)
+        &.active,&:hover
+            color: #ffffff
+            background: #0f848d
+    @media (min-width: 992px)
+        display: flex !important
+.kienlong-quanlyhoso-1
+    padding: r(57px) 0 r(100px)
+    h2
+        font-size: r(24px)
+        text-transform: uppercase
+        color: #333333
+        @media (max-width: 992px)
+            margin-top: 2rem
+    h3
+        font-size: r(18px)
+        text-transform: uppercase
+        color: #00717c
+        margin-bottom: 1rem
+    .warning
+        font-size: r(13px)
+        font-style: italic
+        color: #d73648
+    .wrap-form
+        padding: r(43px) r(30px) r(40px) r(28px)
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1)
+        margin-top: r(31px)
+        > div[id]
+            .form-group
+                display: flex
+                justify-content: space-between
+                margin-bottom: r(4px)
+                label
+                    font-size: r(14px)
+                    font-weight: 500
+                    color: #333333
+                    line-height: r(40px)
+                    margin-bottom: 0
+                    display: flex
+                    flex: 0 0 20%
+                    small
+                        color: #d73648
+                .settingcontrol
+                    display: flex
+                    flex-direction: column
+                    flex: 0 0 80%
+                    input,select
+                        width: 100%
+                        height: r(40px)
+                        margin-bottom: 1rem
+                        font-size: r(13px)
+                        padding: 0.5rem r(10px) 0.5rem r(21px)
+                        color: #999999
+                        border: 1px solid #d7d7d7
+                        &::placeholder
+                            font-size: r(13px)
+                            line-height: r(40px)
+                    textarea
+                        border: 1px solid #d7d7d7
+                        height: r(120px)
+                        margin-bottom: 1rem
+                    span
+                        font-size: r(13px)
+                        color: #333333
+                    a
+                        text-decoration: underline
+                        font-size: r(14px)
+                        font-weight: 600
+                        color: #333333
+                        text-underline-position: under
+                        margin-bottom: r(11px)
+                &.form-radio
+                    .settingcontrol
+                        flex-direction: row
+                        label
+                            line-height: r(40px)
+                            font-size: r(14px)
+                            color: #666666
+                            margin-left: r(9px)
+                            margin-right: r(49px)
+                            display: block
+                            flex: initial
+                        input
+                            width: auto
+                            display: inline-block
+                        @media (max-width: 400px)
+                            label
+                                margin-right: 0.8rem
+
+                @media (max-width: 520px)
+                    flex-direction: column
+
+
+
+
+
+
+    .btn-addcontent 
+        border-width: 2px
+        border-color: rgb(0, 113, 124)
+        border-style: solid
+        height: 36px
+        width: 316px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: r(15px)
+        color: #0f848d
+        text-transform: uppercase
+        font-weight: 600
+        margin-left: 20%
+        margin-top: r(21px)
+        @media (max-width: 520px)
+            margin-left: auto
+            margin-right: auto
+            width: 100%
+            
+    .frm-btnwrap
+        margin-left: 20%
+        margin-top: r(20px)
+        justify-content: flex-start !important
+        @media (max-width: 768px)
+            margin-left: 0
+        @media (max-width: 576px)
+            flex-wrap: wrap
+            margin: auto
+            margin-top: r(30px)
+            justify-content: space-around !important
+        @media (max-width: 520px)
+            flex-direction: row !important
+        @media (max-width: 400px)
+            flex-direction: column !important
+    .frm-btn
+        position: relative
+        width: 145px
+        height: 40px
+        display: flex
+        align-items: center
+        background-color: rgb(15, 132, 141)
+        padding-left: 1rem
+        @media (max-width: 576px)
+            flex: 0 0 47%
+        @media (max-width: 400px)
+            flex: 0 0 100%
+            width: 100%
+            padding-left: 0
+        
+
+        .mdi-check,.mdi-close
+            position: absolute
+            color: #ffffff !important
+            left: r(45px)
+            top: 50%
+            transform: translateY(-50%)
+            font-size: r(18px)
+            @media (max-width: 400px)
+                left: 32%
+
+        .mdi-close
+            color: rgb(215, 54, 72) !important
+            left: r(25px)
+        input
+            background: transparent
+            width: 100%
+            height: 100%
+            border: 0
+            color: #ffffff
+            text-transform: uppercase
+            font-size: r(14px)
+            font-weight: 600
+        &.frm-abort
+            background-color: rgb(255, 255, 255)
+            border-width: 2px
+            border-color: rgb(215, 54, 72)
+            border-style: solid
+            padding-left: 1.5rem
+            margin-left: r(30px)
+            input
+                width: 141px
+                height: 36px
+                color: rgb(215, 54, 72)
+            @media (max-width: 768px)
+                margin-left: 10px
+            @media (max-width: 576px)
+                flex: 0 0 47%
+            @media (max-width: 400px)
+                margin-left: 0
+                margin-top: 1.5rem
+                justify-content: center
+                padding-left: 0
+                label
+                    left: 28%
+
+        &.frm-complete
+            width: r(160px)
+            border-width: 2px
+            border-color: rgb(15, 132, 141)
+            background-color: rgb(255, 255, 255)
+            border-style: solid
+            padding-left: 0
+            margin-left: 22%
+            input
+                color: rgb(15, 132, 141)
+            label
+                display: none !important
+            @media (max-width: 1200px)
+                margin-left: r(30px)
+            @media (max-width: 768px)
+                margin-left: 10px
+            @media (max-width: 576px)
+                flex: 0 0 100%
+                margin-top: r(24px)
+                margin-left: 0
+            @media (max-width: 400px)
+                width: 100%
+            
+
+

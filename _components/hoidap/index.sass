@@ -1,0 +1,105 @@
+.kienlong-hoidap-1
+    padding: r(42px) 0 r(15px)
+    h1
+        font-size: r(30px)
+        text-transform: uppercase
+        color: #333333
+        text-align: center
+        font-weight: 400
+        margin-bottom: r(30px)
+    .faq-item
+        margin-bottom: r(10px)
+        .question,.answer
+            padding: r(17px) r(65px) r(17px) r(70px)
+            position: relative
+            p
+                margin-bottom: 0
+                font-size: r(14px)
+                color: #333333
+            @media (max-width: 400px)
+                padding: r(17px) 3rem r(17px) r(70px)
+                p
+                    font-size: r(13px)
+        .question
+            background: #f3f3f3
+            cursor: pointer
+            &:before
+                position: absolute
+                content: ''
+                width: r(35px)
+                height: r(32px)
+                background-image: url('./../img/hoidap/iconQ.png')
+                left: r(20px)
+                top: r(15px)
+            &:after
+                position: absolute
+                +linearicons('\e881')
+                font-size: r(18px)
+                right: r(20px)
+                top: r(16px)
+                color: #000
+            &.active
+                background: #158499
+                p
+                    color: #acebf0
+                &:before
+                    position: absolute
+                    content: ''
+                    width: r(35px)
+                    height: r(32px)
+                    background-image: url('./../img/hoidap/iconQ-active.png')
+                    left: r(20px)
+                    top: r(15px)
+                &:after
+                    +linearicons('\e882')
+                    color: #acebf0
+        .answer
+            background: #dceeef
+            &:before
+                position: absolute
+                content: ''
+                width: r(36px)
+                height: r(32px)
+                background-image: url('./../img/hoidap/iconA.png')
+                left: r(20px)
+                top: r(15px)
+    .wrap-form
+        padding: r(31px)
+        border: 1.5px solid #158499
+        h2 
+            font-size: r(22px)
+            color: #0f848d
+            font-weight: 600
+            text-transform: uppercase
+            text-align: center
+            margin-bottom: r(35px)
+        > div[id]
+            .form-group
+                display: flex
+                flex-direction: column
+                width: 100%
+                margin-bottom: r(15px)
+                label
+                    font-size: r(14px)
+                    color: #333333
+                    margin-bottom: r(10px)
+                input
+                    height: 38px
+                    width: 100%
+                    border: 2px solid #e1e1e1
+                    font-size: r(13px)
+                    padding: 0 0.5rem
+                textarea
+                    border: 2px solid #e1e1e1
+                    height: r(100px)
+            .frm-btnwrap
+                input
+                    background: #da4251
+                    color: #ffffff
+                    font-size: r(14px)
+                    text-transform: uppercase
+                    border: 0
+                    height: r(40px)
+                    font-weight: 600
+        // @media (max-width: 992px)
+        //     margin-top: 1.5rem
