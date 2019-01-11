@@ -3,6 +3,9 @@ let slider = {
         var swiper = new Swiper('.canhcam-news-1 .swiper-container', {
             slidesPerView: 2,
             spaceBetween: 20,
+            autoplay: {
+                delay: 5000,
+            },
             navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',

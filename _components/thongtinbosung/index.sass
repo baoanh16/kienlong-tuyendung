@@ -1,0 +1,135 @@
+.thongtinbosung
+    h3
+        span
+            color: #333333
+            font-size: r(13px)
+            font-style: italic
+            font-weight: 400
+            text-transform: none
+    h4
+        font-size: r(14px)
+        color: #333333
+        margin-bottom: r(24px)
+    h5
+        font-size: r(14px)
+        color: #333333
+        margin-bottom: r(24px)
+        font-weight: 400
+    .warning
+        margin-bottom: 0.5rem
+        display: block
+    .wrap-form
+        > div[id]
+            .btn-addcontent
+                margin-left: 30%
+                @media (max-width: 992px)
+                    margin-left: auto
+                    margin-right: auto
+            .form-group
+                label
+                    flex: 0 0 30%
+                .settingcontrol
+                    flex: 0 0 70%
+                    textarea
+                        height: r(70px)
+                &.frm-column
+                    flex-direction: column
+                &.form-radio
+                    justify-content: space-between !important
+                    label
+                        flex: 0 0 75%
+                        line-height: 1.5
+                    .settingcontrol
+                        flex: 0 0 25%
+                        justify-content: flex-end
+                        margin-top: r(-9px)
+                        label
+                            &:last-child
+                                margin-right: 0
+                &.frm-select
+                    .settingcontrol
+                        flex-direction: row
+                        label
+                            margin: 0 1rem 0 1.5rem
+                            flex: 0 0 13%
+                        select,input
+                            width: r(120px)
+                            margin-right: r(20px)
+                        @media (max-width: 768px)
+                            flex-direction: row
+                            label
+                                flex: 0 0 16%
+                            select,input
+                                width: 100%
+                        @media (max-width: 465px)
+                            flex-direction: column
+                            select
+                                &:first-child
+                                    margin-bottom: 0
+                                &:not(:first-child)
+                                    margin-top: 0.5rem
+                &.frm-checkbox
+                    margin-top: r(29px)
+                    .settingcontrol
+                        flex: auto
+                        flex-direction: row
+                        align-items: center
+                        label
+                            line-height: 1.5
+                            margin-left: r(9px)
+                            color: #666666
+                            flex: auto
+                        input
+                            width: r(15px)
+                            height: r(15px)
+                            margin-bottom: 0
+                        input[type="text"]
+                            height: r(40px)
+                &.frm-checkbox-text
+                    .settingcontrol
+                        input[type="text"]
+                            width: 100%
+                        &:first-child
+                            flex: 0 0 30%
+                        &:nth-child(2)
+                            flex: 0 0 70%
+                &.frm-btnwrap
+                    margin-left: 0
+                    justify-content: space-between !important
+                    .frm-abort
+                        margin-left: 0
+                        margin-right: 20%
+                    .frm-complete
+                        margin-left: 0
+                &.pl-20
+                    label
+                        padding-left: r(20px)
+                @media (max-width: 1200px)
+                    .frm-abort
+                        margin-left: 0.5rem !important
+                    .frm-complete
+                        margin-left: 0.5rem !important
+                @media (max-width: 768px)
+                    flex-direction: column
+                    label
+                        line-height: 1.5
+                    &.frm-btnwrap
+                        flex-direction: row
+                        margin-left: 0 !important
+                    &.pl-20
+                        label
+                            padding-left: 0
+                    &.form-radio
+                        .settingcontrol
+                            justify-content: flex-start !important
+                    &.frm-btnwrap
+                        .frm-abort
+                            margin-right: 0
+                    &.frm-checkbox
+                        margin-top: 0
+                        input[type="text"]
+                            margin: 0.5rem 0
+                @media (max-width: 576px)
+                    &.frm-btnwrap
+                        .frm-abort,.frm-complete
+                            margin-left: 0 !important

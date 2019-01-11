@@ -86,4 +86,10 @@ $(document).ready(function () {
 		$('.nav-qlhs').slideToggle()
 	});
 
+	let zero = 0
+	$(window).on('scroll',function() {
+		$('.kienlong-header-1').toggleClass('minimize', $(window).scrollTop()>zero)
+		zero = $(window).scrollTop() 	
+	})
+
 });
