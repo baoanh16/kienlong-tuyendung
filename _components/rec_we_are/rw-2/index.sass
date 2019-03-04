@@ -1,0 +1,61 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-rw-2
+	+pad(null null 3rem null )
+	+media-breakpoint-up(lg)
+		+pad(null null r(52px) null )
+	.mission
+		.box
+			+ .box
+				margin-top: 2rem
+			text-align: center
+			.item
+				width: 100%
+				.kl-title
+					+fz(r(16px))
+					text-transform: uppercase
+					+fw(600)
+					color: color-get($mau,main)
+				p
+					color: color-get($mau,xam-den)
+	+media-breakpoint-up(lg)
+		.mission
+			position: relative
+			height: 100%
+			.img
+				+pos(abs, null 3rem 3rem null)
+			.mission-list
+				+pos(abs, 0 null null 0)
+				width: 100%
+				.box
+					position: relative
+					.item
+						margin-top: 0
+						width: 100%
+						+pad(null 15px)
+					&:first-child
+						.item
+							+pos(abs, 20rem)
+					&:nth-child(2)
+						.item
+							+pos(abs, 3rem null null -1rem)
+					&:last-child
+						.item
+							+pos(abs, 4rem null null -1rem)
+	+media-breakpoint-up(xl)
+		.mission
+			.mission-list
+				.box
+					&:first-child
+						.item
+							top: 24rem
+					&:nth-child(2)
+						.item
+							top: 7rem
+					&:last-child
+						.item
+							top: 7rem
+							

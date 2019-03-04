@@ -1,0 +1,155 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+=form_style()
+	width: 100%
+	height: r(40px)
+	margin-right: r(10px)
+	background: color-get($mau, trang)
+	font-size: 1rem
+	position: relative
+	border-radius: 0
+	background: transparent
+	-webkit-appearance: none
+	+media-breakpoint-down(md)
+		font-size: 1rem
+		margin-bottom: .5rem
+
+.canhcam-rh-3
+	.big-block
+		padding: r(19px) 0 1rem 0
+		.block-search
+			.form-job 
+				+form_style()
+				input
+					height: r(40px)
+					background: color-get($mau, trang)
+					border-radius: 0
+					padding-left: r(48px)
+					font-size: 1rem
+					+media-breakpoint-down(lg)
+						font-size: r(13px)
+					+media-breakpoint-down(md)
+						font-size: 1rem
+			.sl-position
+				+form_style()
+				select
+					height: r(40px)
+					background: color-get($mau, trang)
+					border-radius: 0
+					padding-left: r(48px)
+					font-size: 1rem
+					+media-breakpoint-down(lg)
+						font-size: r(13px)
+					+media-breakpoint-down(md)
+						font-size: 1rem
+				&:after
+					pointer-events: none
+					position: absolute
+					content: ""
+					top: 50%
+					transform: translateY(-50%)
+					right: 1rem
+					color: color-get($mau,main)
+					border-left: 7px solid transparent
+					border-right: 7px solid transparent
+					border-top: 6px solid color-get($mau,main-dark)
+			.sl-place
+				+form_style()
+				select
+					height: r(40px)
+					background: color-get($mau, trang)
+					border-radius: 0
+					padding-left: r(48px)
+					font-size: 1rem
+					+media-breakpoint-down(lg)
+						font-size: r(13px)
+					+media-breakpoint-down(md)
+						font-size: 1rem
+				&:after
+					pointer-events: none
+					position: absolute
+					content: ""
+					top: 50%
+					transform: translateY(-50%)
+					right: 1rem
+					color: color-get($mau,main)
+					border-left: 7px solid transparent
+					border-right: 7px solid transparent
+					border-top: 6px solid color-get($mau,main-dark)
+			.btn-search
+				+form_style()
+				width: auto
+				display: block
+				padding: 0 r(80px)
+				white-space: nowrap
+				background-image: -moz-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+				background-image: -webkit-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+				background-image: -ms-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+				color: color-get($mau,trang)
+				// border: 2px solid color-get($mau,trang)
+				box-shadow: 0px 0px 0px 2px color-get($mau,trang) inset
+				position: relative
+				height: r(40px)
+				margin-right: 0
+				+flex-center()
+				&:hover
+					text-decoration: none
+				+media-breakpoint-down(lg)
+					padding: 0px 1.71429rem 0px 3.71429rem
+				+media-breakpoint-down(md)
+					padding: initial
+				i
+					height: 100%
+					color: color-get($mau,trang)
+					position: absolute
+					left: 0
+					margin-left: 2.5rem
+					+media-breakpoint-down(lg)
+						margin-left: .5rem
+					+media-breakpoint-down(md)
+						margin-left: 0
+			// 	width: auto
+
+			// 	display: flex
+			// 	justify-content: center
+			// 	align-items: center
+		i
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			z-index: 11
+			top: 0
+			padding-left: 1rem
+			font-family: 'Material Icons'
+			font-style: normal
+			font-size: r(24px)
+			color: color-get($mau,main-dark)
+		.block
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			padding-top: .5rem
+			.block-download
+				width: r(225px)
+				position: relative
+				a
+					font-size: 1rem
+					font-weight: 100
+					color: color-get($mau,trang)
+					+media-breakpoint-down(md)
+						&:hover
+							text-decoration: none
+					i
+						display: flex
+						width: 100%
+						justify-content: left
+						height: 100%
+						color: color-get($mau,trang)
+						padding: 0
+						font-size: r(18px)
+						// 	&:hover
+						// 		border-bottom: 1px solid color-get($mau,trang)
+

@@ -1,0 +1,50 @@
+section.canhcam-rqa-1
+	.container
+		.row
+			.col
+				.main-title
+					h1.title.text-center hỏi đáp
+		.row
+			.col-lg-8.col-12
+				.canhcam-kl-1
+					.content
+						- for(i=0;i<10;i++)
+							.item
+								.name
+									figure
+										.img
+											img.after(src='./img/recruitment/q_a/qa_icon_question.png', alt='')
+											img.before(src='./img/recruitment/q_a/qa_icon_question_2.png', alt='')
+										figcaption
+
+											h2 Tôi đã thi tốt nghiệp đại học và đang trong thời gian chờ nhận bằng thì có được tham gia ứng tuyển vào Ngân hàng Kiên Long hay không? 
+								.introduce
+									figure
+										.img
+											img(src='./img/recruitment/q_a/qa_icon_answer.png', alt='')
+										figcaption
+											p Bạn phải gửi Bảng điểm thay thế bằng chuyên môn và nếu được trúng tuyển thì bạn phải cam kết thời hạn cụ thể (không quá 03 tháng) để bổ sung bằng tốt nghiệp. 
+			.col-lg-4.col-12
+				.form-group
+					h3.head-title-form gửi câu hỏi
+					h5 Họ tên
+					.name-fill
+						input.form-control(type='text',  aria-label="Name", aria-describedby='basic-addon2')
+					h5 Email
+					.email-fill
+						input.form-control(type='text',  aria-label="Name", aria-describedby='basic-addon2')
+					h5 Số điện thoại
+					.number-fill
+						input.form-control(type='text',  aria-label="Name", aria-describedby='basic-addon2')
+					h5 Tiêu đề
+					.title-fill
+						input.form-control(type='text',  aria-label="Name", aria-describedby='basic-addon2')
+					h5 Nội dung
+					.content-fill
+						input.form-control(type='text',  aria-label="Name", aria-describedby='basic-addon2')
+					a(href="#").btn.send GỬI THÔNG TIN
+		.row
+			.col
+				include ../../pagination/index.pug
+
+ 

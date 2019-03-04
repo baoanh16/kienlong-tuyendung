@@ -15,6 +15,17 @@ html,body
 	+media-breakpoint-up(lg)
 		.title
 			font-size: r(30px)
+
+@font-face 
+	font-family: 'Material Icons'
+	font-style: normal
+	font-weight: 400
+	src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')
+.material-icons
+	font-family: 'Material Icons'
+	font-style: normal
+	font-weight: 400
+	+fz(1rem)
 .kienlong-table
 	table
 		width: 100%
@@ -76,3 +87,54 @@ a
 	margin: 0
 	&:focus
 		outline: none
+
+=general-style()
+	font-size: 1rem
+	font-style: italic
+	color: color-get($mau,xam-form)
+	border: 2px solid color-get($mau,xam-vien)
+	height: r(50px)
+	border-radius: 0
+	background: transparent
+	-webkit-appearance: none
+
+
+a.read-more
+	+pad(.5rem 1.5rem .5rem 2rem)
+	margin-top: 2rem
+	background: transparent
+	border: 2px solid color-get($mau,trang)
+	color: color-get($mau,trang)
+	border-radius: 0
+	display: inline-flex
+	&:after
+		content: '\f142'
+		margin-left: .75rem
+		font: normal normal normal 24px/1 "Material Design Icons"
+		font-size: 1.5rem
+	&:hover
+		background: color-get($mau,trang)
+		color: color-get($mau,main)
+		transition: .3s all ease-in-out
+	&.main
+		border-color: color-get($mau,main)
+		color: color-get($mau,main)
+		&:hover
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+	&.btn-bg-main
+		border-color: color-get($mau,main)
+		margin-top: .5rem
+		+pad(null 1rem)
+		color: color-get($mau,trang)
+		background: color-get($mau,main)
+		&:hover
+			background: transparent
+			color: color-get($mau,main)
+	&.transparent
+		border: 0
+		background: transparent
+		color: color-get($mau,extra)
+		&:hover
+			background: tranparent
+			border: 0

@@ -1,21 +1,30 @@
+try {
+	const lang = new MappingListener({
+		selector: '.language',
+		mobileWrapper: ".main-menu",
+		mobileMethod: "insertBefore",
+		desktopWrapper: ".account",
+		desktopMethod: "insertBefore",
+		breakpoint: 992,
+	}).watch();
 
-const lang = new MappingListener({
-	selector: '.language',
-	mobileWrapper: ".main-menu",
-	mobileMethod: "insertBefore",
-	desktopWrapper: ".account",
-	desktopMethod: "insertBefore",
-	breakpoint: 992,
-}).watch();
+} catch (error) {
 
-const hotline = new MappingListener({
-	selector: '.hotline',
-	mobileWrapper: ".main-menu",
-	mobileMethod: "insertAfter",
-	desktopWrapper: ".language",
-	desktopMethod: "insertBefore",
-	breakpoint: 992,
-}).watch();
+}
+
+try {
+	const hotline = new MappingListener({
+		selector: '.hotline',
+		mobileWrapper: ".main-menu",
+		mobileMethod: "insertAfter",
+		desktopWrapper: ".language",
+		desktopMethod: "insertBefore",
+		breakpoint: 992,
+	}).watch();
+
+} catch (error) {
+
+}
 
 
 
@@ -87,9 +96,9 @@ $(document).ready(function () {
 	});
 
 	let zero = 0
-	$(window).on('scroll',function() {
-		$('.kienlong-header-1').toggleClass('minimize', $(window).scrollTop()>zero)
-		zero = $(window).scrollTop() 	
+	$(window).on('scroll', function () {
+		$('.kienlong-header-1').toggleClass('minimize', $(window).scrollTop() > zero)
+		zero = $(window).scrollTop()
 	})
 
 });

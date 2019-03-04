@@ -1,0 +1,78 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rpos-1
+	+pad(3rem null)
+	.block-sort
+		+pad(null null 2rem null)
+		display: flex
+		align-items: center
+		h4
+			padding-right: 2rem
+			color: color-get($mau,xam-den)
+			margin: 0
+		.sl-sort
+			position: relative
+			&:after
+				position: absolute
+				content: "\e874"
+				font-family: "Linearicons-Free"
+				top: 50%
+				transform: translateY(-50%)
+				right: 1rem
+				color: color-get($mau,text-4)
+				pointer-events: none
+			select
+				+general-style()
+				padding-left: 1.5rem
+				height: auto
+				font-style: normal
+				color: color-get($mau,text-4)
+				width: r(200px)
+	table
+		border: 1px solid color-get($mau,trang)
+		display: table
+		thead
+			background: color-get($mau, main)
+			color: color-get($mau,trang)
+			font-size: r(16px)
+			th
+				border: 0
+				font-weight: 500
+				border-right: 1px solid color-get($mau,trang)
+				vertical-align: middle
+				&:last-child
+					border-right: 0
+		tbody
+			tr
+				border: 0
+				border-top: 1px solid color-get($mau,trang)
+				font-size: r(15px)
+				font-weight: 400
+				color: color-get($mau,xam-den)
+				td
+					position: relative
+					vertical-align: middle
+					border: 0
+					border-right: 1px solid color-get($mau,trang)
+					text-align: center
+					&:first-child
+						text-align: left
+						padding-left: 2rem
+					&:last-child
+						border-right: 0
+					span
+						font-size: r(12px)
+						color: color-get($mau,trang)
+						padding: 2px 1.2rem
+						background: color-get($mau, extra)
+						+pos(abs, 50% 2rem null null)
+						transform: translateY(-50%)
+						border-radius: r(10px)
+						+media-breakpoint-down(md)
+							opacity: 0
+			tr:nth-child(2n)
+				background: color-get($mau, trang-duc)
+
+

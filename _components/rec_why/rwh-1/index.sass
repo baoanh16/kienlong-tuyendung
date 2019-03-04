@@ -1,0 +1,92 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rwh-1
+	+pad(3rem null)
+	.head_quote
+		h2
+			+fz(30px)
+			+fw(300)
+			+mar(null null r(30px) null)
+			text-transform: uppercase
+			color: color-get($mau,xam-den)
+			+media-breakpoint-down(md)
+				+fz(1.5rem)
+		p
+			+fz(15px)
+			+pad(null r(200px) r(30px) r(200px))
+			color: color-get($mau,xam-den)
+			+media-breakpoint-down(md)
+				+pad(null 2.5rem r(30px) 2.5rem)
+			+media-breakpoint-down(sm)
+				+pad(null 1.5rem r(30px) 1.5rem)
+	.mid-title
+		+pad(r(30px) r(190px))
+		color: color-get($mau,xam-den)
+		+media-breakpoint-down(md)
+			+pad(r(30px) 2.5rem)
+		+media-breakpoint-down(sm)
+			+pad(r(30px) 1.5rem)
+	.small-reason
+		position: relative
+		+media-breakpoint-down(md)
+			margin-bottom: r(30px)
+		// filter: grayscale(1)
+		figcaption
+			color: color-get($mau,trang)
+			+pos(abs, 0 null null null)
+			+flex-center()
+			text-align: center
+			color: color-get($mau,trang)
+			+fz(16px)
+			font-weight: 500
+			height: 100%
+			width: 100%
+
+			h4
+				z-index: 99
+				+pad(null r(24px))
+				line-height: r(21px)
+			&:after
+				opacity: .9
+				background-image: -moz-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
+				background-image: -webkit-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
+				background-image: -ms-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
+				display: block
+				position: absolute
+				content: ""
+				width: 100%
+				height: 100%
+	.big-reason
+		height: 100%
+		+pad(1rem)
+		position: relative
+		text-align: center
+		+media-breakpoint-down(md)
+			+pad(1rem 1rem 2rem 1rem)
+			margin-bottom: 1.5rem
+			height: initial
+		.icon
+			i
+				color: color-get($mau,trang)
+				font-size: 5rem
+		.quote
+			color: color-get($mau,trang)
+			// +pos(abs, 0 null null null)
+			+flex-center()
+			flex-direction: column
+			text-align: center
+			color: color-get($mau,trang)
+			+fz(16px)
+			font-weight: 500
+			height: 100%
+			width: 100%
+			h4
+				
+				+fz(r(20px))
+				+pad(r(10px) null r(15px) null)
+			p
+				+fz(16px)
+				font-weight: 300
+

@@ -1,0 +1,48 @@
+section.canhcam-rh-4
+	.container
+		ul#myTab.nav.nav-tabs(role="tablist")
+			li.nav-item
+				a#recruit-tab.nav-link.active(data-toggle="tab" href="#recruit" role="tab" aria-controls="recruit" aria-selected="true") Vị trí tuyển dụng
+			li.nav-item
+				a#inter-tab.nav-link(data-toggle="tab" href="#inter" role="tab" aria-controls="inter" aria-selected="false") Sinh viên - Thực tập
+
+		#myTabContent.tab-content
+			#recruit.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="recruit-tab")
+				.rec-tab
+					.row
+						- for(var x = 0; x < 6; x ++)
+							.col-12.col-lg-4.col-md-6
+								figure
+									img.img-fluid.w-100(src='./img/recruitment/home/home_recruit_1.png', alt='')
+									h4 Giao dịch viên
+									p.hot HOT
+									figcaption
+										a(href="#")
+											h5 Chuyên viên quản lý Khách hàng cá nhân
+										p
+											i.material-icons place
+											| TP. Hồ Chí Minh
+										p
+											i.material-icons access_time
+											| Ngày cập nhật: 27/09/2018
+			#inter.tab-pane.fade(role="tabpanel" aria-labelledby="inter-tab")
+				.inter-tab
+					.row
+						- for(var x = 0; x < 6; x ++)
+							.col-12.col-lg-4.col-md-6
+								figure
+									img.img-fluid.w-100(src='./img/recruitment/home/home_recruit_2.png', alt='')
+									h4 Giao dịch viên
+									p.hot HOT
+									figcaption
+										a(href="#")
+											h5 Chuyên viên quản lý Khách hàng cá nhân
+										p
+											i.material-icons place
+											| TP. Hồ Chí Minh
+										p
+											i.material-icons access_time
+											| Ngày cập nhật: 27/09/2018
+		.row
+			.col.text-center
+				a(href="#").read-more.main.btn XEM TẤT CẢ

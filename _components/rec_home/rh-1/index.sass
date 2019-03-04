@@ -1,0 +1,143 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rh-1
+	// max-width: 1600px
+	background: color-get($mau, main)
+	.menu
+		background: color-get($mau, bg-1)
+		color: color-get($mau, main)
+		+pad(.8rem null)
+		transition: .3s all ease-in-out
+		.menu-btn
+			display: flex
+			justify-content: space-between
+			align-items: center
+			em
+				+fz(1.5rem)
+				transition: .3s all ease-in-out
+			h5
+				margin-bottom: 0
+				+fw(600)
+		&.active
+			background: color-get($mau,extra)
+			color: color-get($mau,trang)
+			transition: .3s all ease-in-out
+			.menu-btn
+				em
+					transition: .3s all ease-in-out
+					transform: rotate(180deg)
+	.menu-list
+		display: none
+
+
+	+media-breakpoint-up(lg)
+		.menu
+			display: none
+		.menu-list
+			display: flex
+
+	ul
+		height: r(60px)
+		+media-breakpoint-down(lg)
+			height: auto
+		+media-breakpoint-down(md)
+			height: auto
+		+flex-center()
+		text-align: center
+		margin: 0 !important
+		li
+			display: table
+			white-space: nowrap
+			width: 100%
+			height: 100%
+			margin: 0 !important
+			border-left: 1px solid color-rgba(color-get($mau,den),.15)
+			&:last-child
+				border-right: 1px solid color-rgba(color-get($mau,den),.15)
+			+media-breakpoint-down(lg)
+				white-space: normal
+			+media-breakpoint-down(md)
+				background: color-get($mau, main)
+				padding-left: 0
+				border: 0
+				br
+					display: none
+				&:last-child
+					border: 0
+			a
+				+flex-center()
+				padding: r(9px) r(20px)
+				text-transform: uppercase
+				width: 100%
+				height: 100%
+				color: color-get($mau,trang)
+				text-transform: uppercase
+				background: color-get($mau, main)
+				&:hover
+					text-decoration: none
+				+media-breakpoint-up(lg)
+					&:hover, &.active, &:focus
+						text-decoration: underline
+						background: color-get($mau, main-dark)
+				+media-breakpoint-down(md)
+					border-bottom: 1px solid color-get($mau,trang)
+					justify-content: left
+					padding-left: 0
+
+		li.spec
+			+flex-center()
+			+media-breakpoint-down(md)
+				justify-content: end
+			a
+				padding: r(14px) r(20px)
+				+media-breakpoint-up(xl)
+					display: inline
+				+media-breakpoint-down(md)
+					padding-left: 0
+					border: 0
+			i
+				text-decoration: none !important
+				margin-right: r(16px)
+				padding: .5rem
+				border-radius: 50%
+				border: 2px solid color-get($mau,trang)
+				color: color-get($mau,trang)
+				background-image: -moz-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+				background-image: -webkit-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+				background-image: -ms-linear-gradient( 90deg, rgb(236,32,41) 0%, rgb(255,65,119) 100%)
+
+		.block
+			height: r(60px)
+			a
+				display: block
+				height: 100%
+
+	// ul
+	// 	height: r(60px)
+	// 	margin: 0
+	// 	+media-breakpoint-down(lg)
+	// 		height: auto
+	// 	li
+	// 		a
+	// 			padding: r(9px) r(20px)
+	// 			width: 100%
+	// 			height: 100%
+	// 			display: block
+	// 			color: color-get($mau,trang)
+	// 			text-transform: uppercase
+
+
+// .Rounded_Rectangle_1 {
+//   border-style: solid
+//   border-width: 2px
+//   border-color: rgb(237, 245, 246)
+//   border-radius: 50%
+//   position: absolute
+//   left: 1382px
+//   top: 91px
+//   width: 34px
+//   height: 34px
+//   z-index: 201
+// }

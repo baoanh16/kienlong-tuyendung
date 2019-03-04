@@ -1,0 +1,19 @@
+extends _layout/_layout.pug
+block var
+	- var title = "rec_home"
+	- var description = "Description for rec home page"
+	- var bodyclass = "rec_home"
+	- var href = "/rec_home.html"
+block header
+	include ../_components/header/index.pug
+block main
+	//- 
+	include ../_components/rec_home/rh-2/index.pug
+	include ../_components/rec_home/rh-3/index.pug
+	include ../_components/rec_home/rh-4/index.pug
+	include ../_components/rec_home/rh-5/index.pug
+	include ../_components/home/h-4/index-rec.pug
+	include ../_components/rec_home/rh-6/index.pug
+block footer
+	include ../_components/footer/f-1/index.pug
+	include ../_components/footer/f-2/index.pug

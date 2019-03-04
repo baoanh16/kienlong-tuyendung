@@ -1,0 +1,71 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rs-1
+	+pad(3rem null)
+	.head-title 
+		+fz(r(30px))
+		font-weight: 300
+		text-transform: uppercase
+		+pad(null null r(37px) null)
+		+media-breakpoint-down(md)
+			+fz(r(30px))
+		+media-breakpoint-down(sm)
+			+fz(1.5rem)
+		+media-breakpoint-down(sm)
+			+fz(1.2rem)
+
+		
+	.canhcam-card
+		display: flex
+		+media-breakpoint-down(md)
+			flex-direction: column-reverse
+		.canhcam-wrapper-content
+			max-width: 58.3333333%
+			-webkit-flex: 0 0 58.3333333%
+			+pad(null r(70px) null null)
+			+media-breakpoint-down(md)
+				+pad(1.5rem)
+				box-shadow: 0px 0px 21px 1px color-rgba(color-get($mau,den),.2)
+				max-width: 100%
+				-webkit-flex: 0 0 100%
+
+			ul
+				padding-left: 0
+				font-weight: bold
+				+fz(16px)
+				text-transform: uppercase
+				color: color-get($mau,main)
+				list-style: none
+				li
+					font-size: 1rem
+					text-transform: none
+					font-weight: 300
+					color: color-get($mau,xam-den)
+					position: relative
+					padding-left: 1rem
+					&:after
+						font-size: 1.5rem
+						content: "-"
+						top: -0.5rem
+						left: 0
+						position: absolute
+			p
+				+pad(null null 1.5rem null)
+				font-style: italic
+				span
+					font-style: italic
+					color: color-get($mau,do)
+					+ span
+						text-decoration: underline
+						color: color-get($mau,xam-den)
+		
+		.canhcam-card-image
+			max-width: 41.6666666667%
+			-webkit-flex: 0 0 41.6666666667%
+			+media-breakpoint-down(md)
+				background-image: none !important
+				max-width: 100%
+				-webkit-flex: 0 0 100%
+				margin-bottom: 2rem

@@ -1,0 +1,146 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rh-5
+	+pad(3rem null)
+	.title
+		// margin-top: r(41px)
+		h2
+			font-weight: 400
+			font-size: r(30px)
+			text-transform: uppercase
+			padding-bottom: r(21px)
+
+			+media-breakpoint-down(md)
+				font-size: 1.5rem
+
+		p
+			font-weight: normal
+			font-size: r(16px)
+			padding-bottom: r(39px)
+	.block-step
+		figure
+			img
+				height: fit-content
+			position: relative
+			margin-bottom:  r(30px)
+			// padding: 28px
+			figcaption
+				width: 100%
+				height: 100%
+				position: absolute
+				+flex-center()
+				top: 50%
+				transform: translateY(-50%)
+				flex-direction: column
+				color: color-get($mau,den)
+				// opacity: 0
+				h3
+					text-transform: uppercase
+					color: color-get($mau,main)
+					font-weight: bold
+					font-size: r(18px)
+					padding-top: r(17px)
+					padding-bottom: r(15px)
+					margin: 0
+							
+				p
+					
+					padding: 0 r(40px) 
+					
+					font-weight: 100
+					span
+						color: color-get($mau,main)
+						font-weight: bold
+						font-size: r(15px)
+					.email
+						color: color-get($mau,den)
+						font-weight: 100
+						text-decoration: underline
+
+	.owl-carousel
+		.item
+			figure
+				// width: 140px
+				margin-right: r(93px) 
+				background: color-get($mau, main-light)
+				border-radius: 10px
+				margin-bottom: r(110px)
+				+flex-center()
+				flex-direction: column
+				+media-breakpoint-down(md)
+					margin-bottom: 4rem
+
+				+media-breakpoint-down(xs)
+					margin-right: r(40px)
+				img
+					width: auto
+					padding: r(29px) 0 r(21px) 0
+				figcaption
+					h4
+						margin-bottom: r(21px)
+						color: color-get($mau,trang)
+						font-size: r(15px)
+						font-weight: normal
+					&:before
+						position: absolute
+						display: block
+						content: ""
+						width: 10px
+						height: 10px
+						border-right: 9px solid transparent
+						border-left: 9px solid transparent
+						border-top: 1rem solid color-get($mau,main-light)
+						left: 25%
+						bottom: r(-12px)
+				&:before
+					position: absolute
+					display: block
+					content: ""
+					width: 104%
+					height: 6px
+					right: 9px
+					background: color-get($mau, main)
+					bottom: r(-32px)
+				&:after
+					position: absolute
+					display: block
+					content: ""
+					width: 10px
+					height: 10px
+					border-radius: 50%
+					border: 1px solid color-get($mau,main)
+					background: color-get($mau, trang)
+					bottom: r(-34px)
+				// 	// left: 50%
+				// 	// transform: translateX(-50%)
+		.owl-item.active:last-child
+			.item
+				figure
+					// margin-right: 30px
+					figcaption
+						&:after
+							position: absolute
+							display: block
+							content: ""
+							width: 10px
+							height: 10px
+							border-top: 7px solid transparent
+							border-bottom: 7px solid transparent
+							border-left: 1rem solid color-get($mau,main)
+							right: 0
+							bottom: r(-36px)
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					width: 3rem
+					height: 3rem
+					+mar(0rem .5rem 3rem .5rem)
+					background: color-get($mau, main)
+					color: color-get($mau,trang)
+					+bor-rad(50%)
+					+fz(1.5rem)
+					+lh(3rem)
+					&:hover, &:active, &:focus
+						outline: none

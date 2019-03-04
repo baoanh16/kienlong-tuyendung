@@ -1,0 +1,115 @@
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-rp-2
+	+pad(3rem null )
+	.block-title
+		h1
+			+fz(r(30px))
+			// padding-bottom: r(30px)
+			+fw(400)
+			text-transform: uppercase
+			+media-breakpoint-down(md)
+				+fz(1.5rem)
+		p
+			+pad( r(25px)  r(140px) r(40px) r(140px) )
+			+fz(r(18px))
+			font-weight: 400
+			+media-breakpoint-down(lg)
+				+pad( r(25px)  2rem r(20px) 2rem )
+			+media-breakpoint-down(md)
+				+fz(r(14px))
+				+pad( r(25px)  null r(10px) null )
+	.canhcam-card
+		display: flex
+		flex-direction: column
+		+mar(5px null)
+		+media-breakpoint-down(md)
+			+ .canhcam-card
+				+mar(2.5rem null null null )
+			&:last-child
+				+mar(2.5rem null 2.5rem null )
+			box-shadow: 0px 0px 21px 1px color-rgba(color-get($mau,den),.2)
+			padding: .5rem
+		+media-breakpoint-up(lg)
+			flex-direction: row
+			&:hover
+				.canhcam-card-image
+					figure
+						img
+							transform: scale(1.2)
+			&:nth-child(odd)
+				.canhcam-card-content
+					&:before
+						opacity: 1
+						left: 100%
+
+		.canhcam-card-content
+
+			+media-breakpoint-up(lg)
+				// +pad(r(50px) r(18px)  r(115px) r(15px)  )
+				padding-right: r(45px)
+				max-width: 50%
+				-webkit-flex: 0 0 50%
+				position: relative
+				&:before
+					opacity: 0
+					-webkit-clip-path: polygon(3% 50%, 0 0, 0 100%)
+					clip-path: polygon(3% 50%, 0 0, 0 100%)
+					position: absolute
+					display: block
+					content: ""
+					width: 100%
+					height: 100%
+					// left: 100%
+					top: 50%
+					background: color-get($mau, trang)
+					z-index: 99
+					transform: translateY(-50%)
+			.canhcam-card-content-wrapper
+				padding-left: .5rem
+				+media-breakpoint-up(lg)
+					+pad(null null null r(15px))
+				h3
+					color: color-get($mau,main)
+					+fz(r(24px))
+					font-weight: 400
+					+pad(null null r(25px) null )
+					+media-breakpoint-down(md)
+						+fz(1.5rem)
+						+pad(.5rem null null null)
+					+media-breakpoint-down(sm)
+						+fz(1.2rem)
+				ul
+					padding-left: r(16px)
+					font-size: r(15px)
+					font-weight: 500
+					li
+						font-weight: 400
+
+
+		.canhcam-card-image
+			+media-breakpoint-down(md)
+				background-image: none !important
+				figure
+					+pad(1rem null null null)
+					img
+			+media-breakpoint-up(lg)
+				-webkit-flex: 0 0 50%
+				max-width: 50%
+				overflow: hidden
+				figure
+					margin: 0
+					height: 100%
+					img
+						transition: .3s all ease-in-out
+						height: 100%
+						max-width: 100%
+
+	.block-quote
+		padding-top: r(27px)
+		p
+			font-weight: 300
+
+
