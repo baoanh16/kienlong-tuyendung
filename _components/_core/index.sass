@@ -4,6 +4,16 @@ html,body
 	font-size: 16px
 	color: #333
 	font-family: 'Montserrat', sans-serif
+	main
+		overflow: hidden
+		@media (max-width: 576px)
+			margin-top: 72px
+		@media (min-width: 577px) and (max-width: 991px)
+			margin-top: 76px
+		@media (min-width: 992px) and (max-width: 1199px)
+			margin-top: 135px
+		@media (min-width: 1200px)
+			margin-top: 143px
 .kienlong-title
 	margin-bottom: 1rem
 	text-align: center
@@ -138,3 +148,202 @@ a.read-more
 		&:hover
 			background: tranparent
 			border: 0
+
+.canhcam-breadcrumb-1
+	background-color: #e9ecef
+	ol.breadcrumb
+		align-items: center
+		margin-bottom: 0
+		padding-left: 0 !important
+		padding-right: 0 !important
+		margin-left: -15px
+		margin-right: -15px
+		li
+			padding-left: 15px
+			padding-right: 15px
+			position: relative
+			&:before
+				position: absolute
+				content: '\f142'
+				font-family: "Material Design Icons"
+				color: #666666
+				font-size: 18px
+				top: 50%
+				right: -10px
+				transform: translateY(-50%)
+			&:last-child
+				&:before
+					display: none
+		span
+			color: #0f848d
+			font-size: 12px
+			font-weight: 400
+			transition: .15s ease-in-out
+		a.active
+			span
+				color: #666666
+		li
+			&:hover
+				span
+					color: #0f848d
+					font-weight: 500
+
+
+
+
+a.edit-link
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 30px
+	width: 30px
+	border-radius: 50%
+	box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)
+	background-color: #fff
+	i.fa.fa-pencil:before 
+		display: inline-block
+		font-family: "Material Design Icons"
+		font-size: inherit
+		text-rendering: auto
+		font-style: normal
+		font-weight: 400
+		font-variant: normal
+		line-height: inherit
+		-webkit-font-smoothing: antialiased
+		content: "\f3eb"
+		font-size: 1.125rem
+		color: #0f848d
+		transition: .3s ease-in-out
+	&:hover
+		i.fa.fa-pencil:before
+			transform: rotate(360deg)
+
+.klb-dangkynhanthongbao
+	padding: 3rem 0
+	h2.title
+		font-size: 24px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 15px
+		@media (min-width: 992px)
+			font-size: 30px
+.form-dangkynhanthongbao
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18)
+	border: 1px solid #0f848d
+
+	.wrap-form
+		flex: 0 0 100%
+		padding: 15px
+		@media (min-width: 992px)
+			padding: 25px
+		@media (min-width: 992px)
+			flex: 0 0 50%
+	.image
+		flex: 0 0 100%
+		margin-top: 30px
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		@media (min-width: 992px)
+			flex: 0 0 50%
+			margin-top: 0
+
+	.form-group
+		margin-bottom: 15px
+		label
+			font-size: 14px
+			font-weight: 600
+			color: #333333
+			display: block
+			margin-bottom: 4px
+			span
+				color: #da4251
+				font-weight: 500
+		input[type="text"]
+			width: 100%
+			height: 40px
+			border: 2px solid #e1e1e1
+			background-color: #ffffff
+			color: #333333
+			font-size: 15px
+			padding: 0px 14px
+			transition: .3s ease-in-out
+			&::-webkit-input-placeholder
+				font-style: italic
+				color: #e1e1e1
+			&:focus
+				border: 2px solid #00717c
+		.radio-group
+			display: flex
+			flex-wrap: wrap
+		.radio
+			display: flex
+			align-items: center
+			margin-top: 20px
+			p
+				margin-left: 5px
+				font-size: 14px
+				color: #666666
+				font-weight: 400
+			flex: 0 0 100%
+			@media (min-width: 992px)
+				flex: 0 0 25%
+				margin-top: 0
+		select
+			width: 100%
+			height: 40px
+			border: 2px solid #e1e1e1
+			background-color: #ffffff
+			color: #333333
+			font-size: 15px
+			padding: 0px 14px
+			transition: .3s ease-in-out
+			&:focus
+				border: 2px solid #00717c
+
+		&.form-btn
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -7.5px
+			.custom-col-6
+				flex: 0 0 50%
+				padding: 0 7.5px
+			.custom-btn-submit, .custom-btn-cancel
+				width: 100%
+				height: 40px
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: .3s ease-in-out
+				i, em
+					margin-right: 4px
+					color: #ffffff
+					font-size: 18px
+					transition: .3s ease-in-out
+				span
+					margin-left: 4px
+					color: #ffffff
+					font-size: 14px
+					text-transform: uppercase
+					font-weight: 600
+					transition: .3s ease-in-out
+				&:hover
+					background-color: rgba(0,0,0,0)
+			.custom-btn-submit
+				background-color: #0f848d
+				box-shadow: inset 0 0 0 2px #0f848d
+				&:hover
+					span, i, em
+						color: #0f848d
+			.custom-btn-cancel
+				background-color: #da4251
+				box-shadow: inset 0 0 0 2px #da4251
+				&:hover
+					span, i, em
+						color: #da4251

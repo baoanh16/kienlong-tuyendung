@@ -3,56 +3,57 @@
 // CODE
 //////////////////////////////////////
 .canhcam-rwh-1
-	+pad(3rem null)
+	figure
+		margin-bottom: 0
+	padding: 3rem 0
 	.head_quote
 		h2
-			+fz(30px)
-			+fw(300)
-			+mar(null null r(30px) null)
+			font-size: 30px
+			font-weight: 400
 			text-transform: uppercase
-			color: color-get($mau,xam-den)
+			color: #333333
 			+media-breakpoint-down(md)
-				+fz(1.5rem)
+				font-size: 24px
 		p
-			+fz(15px)
-			+pad(null r(200px) r(30px) r(200px))
-			color: color-get($mau,xam-den)
+			font-size: 15px
+			page-break-after: 0px 200px 30px 200px
+			color: #333333
 			+media-breakpoint-down(md)
-				+pad(null 2.5rem r(30px) 2.5rem)
+				padding: 0px 2.5rem 1.875rem 2.5rem
 			+media-breakpoint-down(sm)
-				+pad(null 1.5rem r(30px) 1.5rem)
+				padding: 0px 1.5rem 1.875rem 1.5rem
 	.mid-title
-		+pad(r(30px) r(190px))
-		color: color-get($mau,xam-den)
-		+media-breakpoint-down(md)
-			+pad(r(30px) 2.5rem)
-		+media-breakpoint-down(sm)
-			+pad(r(30px) 1.5rem)
+		color: #333333
+		width: 80%
+		margin-top: 30px
+		margin-bottom: 30px
+		font-size: 15px
+		line-height: 24px
 	.small-reason
 		position: relative
 		+media-breakpoint-down(md)
-			margin-bottom: r(30px)
+			margin-bottom: 1.875rem
 		// filter: grayscale(1)
 		figcaption
 			color: color-get($mau,trang)
 			+pos(abs, 0 null null null)
-			+flex-center()
+			display: flex
+			align-items: center
+			justify-content: center
 			text-align: center
 			color: color-get($mau,trang)
-			+fz(16px)
+			font-size: 16px
 			font-weight: 500
 			height: 100%
 			width: 100%
-
 			h4
 				z-index: 99
-				+pad(null r(24px))
-				line-height: r(21px)
+				padding: 0px 24px
+				line-height: r(24px)
+				font-size: 16px
 			&:after
 				opacity: .9
-				background-image: -moz-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
-				background-image: -webkit-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
-				background-image: -ms-linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
+				background-image: linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
 				display: block
 				position: absolute
 				content: ""
@@ -60,33 +61,39 @@
 				height: 100%
 	.big-reason
 		height: 100%
-		+pad(1rem)
+		padding: 1rem
 		position: relative
 		text-align: center
 		+media-breakpoint-down(md)
-			+pad(1rem 1rem 2rem 1rem)
+			padding: 1rem 1rem 2rem 1rem
 			margin-bottom: 1.5rem
 			height: initial
 		.icon
 			i
-				color: color-get($mau,trang)
+				color: #ffffff
 				font-size: 5rem
 		.quote
-			color: color-get($mau,trang)
-			// +pos(abs, 0 null null null)
-			+flex-center()
+			color: #ffffff
+			display: flex
+			align-items: center
+			justify-content: center
 			flex-direction: column
 			text-align: center
-			color: color-get($mau,trang)
-			+fz(16px)
+			color: #ffffff
+			font-size: 16px
 			font-weight: 500
 			height: 100%
 			width: 100%
 			h4
 				
-				+fz(r(20px))
-				+pad(r(10px) null r(15px) null)
+				font-size: 1.25rem
+				padding: 10px 0px 15px 0px
 			p
-				+fz(16px)
+				font-size: 16px
 				font-weight: 300
+
+	.col.text-center
+		display: flex
+		align-items: center
+		justify-content: center
 

@@ -3,38 +3,39 @@
 // CODE
 //////////////////////////////////////
 .canhcam-rr-1
-	+pad(r(44px) null null null )
+	padding-top: 44px
 	.block-title
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
 		h1
-			+fz(r(30px))
-			// padding-bottom: r(30px)
-			+fw(400)
-			text-transform: uppercase
-			+media-breakpoint-down(md)
-				+fz(1.5rem)
-		p
-			+pad( r(25px)  r(416px) r(40px) r(416px) )
-			+fz(r(18px))
+			font-size: 30px
 			font-weight: 400
-			+media-breakpoint-down(lg)
-				+pad( r(25px)  15rem r(40px) 15rem )
+			text-transform: uppercase
+			color: #333333
 			+media-breakpoint-down(md)
-				+fz(r(14px))
-				+pad( r(25px)  10rem r(40px) 10rem )
-			+media-breakpoint-down(sm)
-				+pad( r(25px)  2rem r(40px) 2rem )
-			+media-breakpoint-down(xs)
-				+pad( r(25px)  1rem r(40px) 1rem )
+				font-size: 1.5rem
+		p
+			font-size: 1.125rem
+			font-weight: 300
+			width: 90%
+			margin-top: 20px
+			color: #333333
+			@media (min-width: 992px)
+				width: 80%
+			@media (min-width: 1200px)
+				width: 70%
 	.canhcam-card
 		display: flex
 		flex-direction: column
-		+mar(5px null)
+		margin: 5px 0
 		+media-breakpoint-down(md)
 			+ .canhcam-card
-				+mar(2.5rem null null null )
+				margin-top: 2.5rem
 			&:last-child
-				+mar(2.5rem null 2.5rem null )
-			box-shadow: 0px 0px 21px 1px color-rgba(color-get($mau,den),.2)
+				margin-top: 2.5rem 0
+			box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, .2)
 			padding: .5rem
 		+media-breakpoint-up(lg)
 			flex-direction: row
@@ -57,12 +58,11 @@
 						-webkit-clip-path: polygon(97% 50%, 100% 0, 100% 100%)
 						clip-path:  polygon(100% 0, 100% 100%, 97% 50%)
 						right: calc(100% - .5px)
-					//	left: calc(100% - .5px)
 
 		.canhcam-card-content
 
 			+media-breakpoint-up(lg)
-				+pad(r(50px) r(18px)  r(115px) r(15px)  )
+				padding: 50px 18px 115px 15px
 				max-width: 50%
 				-webkit-flex: 0 0 50%
 				position: relative
@@ -75,37 +75,33 @@
 					content: ""
 					width: 100%
 					height: 100%
-					// left: 100%
 					top: 50%
-					background: color-get($mau, trang)
+					background: #ffffff
 					z-index: 99
 					transform: translateY(-50%)
 			.canhcam-card-content-wrapper
 				padding-left: .5rem
 				+media-breakpoint-up(lg)
-					+pad(null null null r(15px))
+					padding-bottom: 15px
 				h3
-					color: color-get($mau,main)
-					+fz(r(24px))
-					font-weight: 400
-					+pad(null null r(25px) null )
-					+media-breakpoint-down(md)
-						+fz(1.5rem)
-						+pad(.5rem null null null)
-					+media-breakpoint-down(sm)
-						+fz(1.2rem)
-				p
+					color: #0f848d
+					font-size: 24px
 					font-weight: 600
-					+media-breakpoint-down(sm)
-					 	font-weight: 500
+					margin-bottom: 25px
+					+media-breakpoint-down(md)
+						font-size: 1.5rem
+						padding-top: 0.5rem
+				p
+					font-weight: 500
+					font-size: 14px
+					color: #333333
 		.canhcam-card-image
 			+media-breakpoint-down(md)
 				background-image: none !important
 				figure
-					+pad(1rem null null null)
-					img
+					padding-top: 1rem
 			+media-breakpoint-up(lg)
-				-webkit-flex: 0 0 50%
+				flex: 0 0 50%
 				max-width: 50%
 				overflow: hidden
 				figure
