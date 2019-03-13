@@ -3,15 +3,16 @@
 // CODE
 //////////////////////////////////////
 .canhcam-rpos-1
-	+pad(3rem null)
+	padding: 3rem 0
 	.block-sort
-		+pad(null null 2rem null)
+		padding-bottom: 2rem
 		display: flex
 		align-items: center
 		h4
-			padding-right: 2rem
-			color: color-get($mau,xam-den)
-			margin: 0
+			font-size: 15px
+			font-weight: 500
+			margin-right: 2rem
+			color: #333333
 		.sl-sort
 			position: relative
 			&:after
@@ -21,41 +22,42 @@
 				top: 50%
 				transform: translateY(-50%)
 				right: 1rem
-				color: color-get($mau,text-4)
+				color: #333333
 				pointer-events: none
 			select
 				+general-style()
 				padding-left: 1.5rem
 				height: auto
 				font-style: normal
-				color: color-get($mau,text-4)
+				color: #333333
 				width: r(200px)
+				font-size: 14px  
 	table
-		border: 1px solid color-get($mau,trang)
+		border: 1px solid #333333
 		display: table
 		thead
-			background: color-get($mau, main)
-			color: color-get($mau,trang)
+			background: #0f848d
+			color: #ffffff
 			font-size: r(16px)
 			th
 				border: 0
 				font-weight: 500
-				border-right: 1px solid color-get($mau,trang)
+				border-right: 1px solid #ffffff
 				vertical-align: middle
 				&:last-child
 					border-right: 0
 		tbody
 			tr
 				border: 0
-				border-top: 1px solid color-get($mau,trang)
+				border-top: 1px solid #ffffff
 				font-size: r(15px)
 				font-weight: 400
-				color: color-get($mau,xam-den)
+				color: #333333
 				td
 					position: relative
 					vertical-align: middle
 					border: 0
-					border-right: 1px solid color-get($mau,trang)
+					border-right: 1px solid #ffffff
 					text-align: center
 					&:first-child
 						text-align: left
@@ -63,15 +65,32 @@
 					&:last-child
 						border-right: 0
 					span
-						font-size: r(12px)
-						color: color-get($mau,trang)
-						padding: 2px 1.2rem
-						background: color-get($mau, extra)
-						+pos(abs, 50% 2rem null null)
+						width: 60px
+						height: 20px
+						border-radius: 10px
+						display: flex
+						align-items: center
+						justify-content: center
+						position: absolute
+						top: 50%
+						right: 12px
 						transform: translateY(-50%)
+						font-size: r(12px)
+						color: #ffffff
+						background: color-get($mau, extra)
 						border-radius: r(10px)
 						+media-breakpoint-down(md)
 							opacity: 0
+					a
+						font-size: 15
+						font-weight: 400
+						color: #333333
+						text-decoration: none
+						transition: .3s ease-in-out
+						&:hover
+							text-decoration: underline
+							text-underline-position: under
+							color: #0f848d
 			tr:nth-child(2n)
 				background: color-get($mau, trang-duc)
 

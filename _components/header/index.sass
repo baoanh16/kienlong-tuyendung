@@ -165,6 +165,8 @@
             display: flex
             align-items: center
             position: relative
+            @media (max-width: 576px)
+                position: static
             .avatar
                 width: r(39px)
                 height: r(39px)
@@ -172,14 +174,15 @@
                 border: 1.25px solid #00717c
                 overflow: hidden
                 position: relative
-                z-index: 1
+                z-index: 2
+                background-color: #fff
                 img
                     height: 100%
                     width: 100%
                     object-fit: cover
             .username
                 height: r(24px)
-                width: r(128px)
+                // width: r(128px)
                 display: flex
                 justify-content: center
                 align-items: center
@@ -187,6 +190,9 @@
                 border-radius: 12px
                 margin-left: -1.1rem
                 cursor: pointer
+                position: relative
+                padding-left: 16px
+                z-index: 1
                 span
                     font-size: r(12px)
                     color: #ffffff
@@ -198,6 +204,8 @@
                         +material("\f140")
                         font-size: r(18px)
                         margin-left: r(11px)
+                    @media (max-width: 576px)
+                        display: none
             .user-management
                 position: absolute
                 top: calc(100% + 17px)
@@ -209,7 +217,10 @@
                 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
                 padding: r(19px) 0 r(26px) 
                 display: none
-                z-index: 2
+                z-index: 10001
+                @media (max-width: 576px)
+                    left: 50%
+                    transform: translate(-50%)
                 &:before
                     position: absolute
                     content: ''
@@ -221,6 +232,8 @@
                     top: -11px
                     right: 72px
                     transition: 0.3s all ease-in-out
+                    @media (max-width: 576px)
+                        display: none
                 .title
                     padding: 0 r(22px) 0 r(19px)
                     text-transform: uppercase
@@ -233,6 +246,9 @@
                     width: 100%
                     display: block
                     position: relative
+                    transition: .3s ease-in-out
+                    &:hover
+                        color: #ffffff
                     &:before,&:after
                         position: absolute
                         content: ''
@@ -254,12 +270,14 @@
                     margin-bottom: r(13px)
                     li
                         a
+                            transition: .3s ease-in-out
                             padding: r(8px) r(22px) r(6px) r(19px)
                             font-size: r(13px)
                             color: #ffffff
                             font-weight: 500
                             display: flex
                             align-items: center
+                            border-bottom: 1px solid rgba(0,0,0,0)
                             &:before
                                 margin-right: r(14px)
                         &:nth-child(1)
@@ -285,7 +303,10 @@
                                 height: r(18px)
                         &:hover,&.active
                             a
-                                background: rgba(10, 113, 121,0.85)
+                                background: rgba(10, 113, 121,1)
+                        &:hover
+                            a
+                                border-bottom: 1px solid #ffffff
         @media (max-width: 992px)
             .login,.sign-up
                 margin-left: 0
@@ -390,8 +411,10 @@
                     top: -6px
                     right: r(73px)
                 li
-                    padding: r(12px) r(12px) r(10px) r(12px)
+                    padding: 8px
+                    text-align: center
                     position: relative
+                    transition: .3s ease-in-out
                     &:nth-child(2)
                         &:before,&:after
                             position: absolute
@@ -407,13 +430,23 @@
                         &:after
                             bottom: 0
                     @media (max-width: 992px)
-                        padding-left: 40px !important
+                        text-align: left
+                        padding-left: 30px !important
                     a
                         font-size: r(15px)
-                        color: white
+                        color: #c4f8fc
                         font-weight: 600
+                        text-transform: uppercase
+                        transition: .3s ease-in-out
                         @media (max-width: 992px)
+                            text-transform: initial
+                            text-align: left
                             color: #333333
+                    @media (min-width: 992px)
+                        &:hover, &.active
+                            background-color: rgba(0,0,0,.15)
+                            a
+                                color: #ffffff
                 &.show
                     display: block
 

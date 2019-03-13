@@ -13,6 +13,7 @@
 				+pos(abs, 50% null null null)
 				transform: translateY(-50%)
 				width: 100%
+				z-index: 3
 				h2
 					color: color-get($mau,trang)
 					+fw(600)
@@ -26,10 +27,22 @@
 				background-image: -webkit-linear-gradient(135deg, #ff000b 0%, #807785 20%, #00edff 100%)
 				+pos(abs, 0 null null 0)
 				opacity: 0.75
-		&.active
+				z-index: 2
+				transition: .3s ease-in-out
+			&:after
+				content: ''
+				width: 100%
+				height: 100%
+				background: rgba(0, 0, 0, 0)
+				+pos(abs, 0 null null 0)
+				z-index: 1
+				transition: .3s ease-in-out
+		&.active, &:hover
 			figure
 				&:before
-					opacity: .35
+					opacity: .2
+				&:after
+					background: rgba(0, 0, 0, .5)
 		
 	+media-breakpoint-up(lg)
 		.item
@@ -37,11 +50,16 @@
 				figcaption
 					width: auto
 					h2
-						+fz(2.5rem)
+						+fz(2rem)
 						padding-left: 1.5rem
 						border-left: 4px solid color-get($mau,extra)
+						text-align: left
 			+ .item
 				figure
 					figcaption
 						margin-left: 5rem
+	@media (max-width: 991.9px)
+		.item
+			figcaption
+				left: 0 !important
 

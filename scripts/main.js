@@ -69,6 +69,10 @@ $(document).ready(function () {
 		$('.kienlong-header-1 .user-management').slideToggle()
 		$('.kienlong-header-1 .bottom-nav').removeClass('active')
 	});
+	$('.kienlong-header-1 .avatar').on('click', function () {
+		$('.kienlong-header-1 .user-management').slideToggle()
+		$('.kienlong-header-1 .bottom-nav').removeClass('active')
+	});
 
 	$('.kienlong-header-1 .btn-close-menu').on('click', function () {
 		$('.kienlong-header-1 .bottom-nav').removeClass('active');

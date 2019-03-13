@@ -27,11 +27,20 @@
                     color: #d73648
                     display: contents
             .form-group
+                justify-content: flex-start !important
+                align-items: flex-start !important
+                .settingcontrol 
+                    @media (max-width: 768px)
+                        flex: 0 0 100% !important
+                        max-width: 100% !important
+                        width: 100% !important
                 label
                     flex: 0 0 30%
                     font-weight: 400
-                    line-height: 1.5
                     flex-direction: column
+                    @media (max-width: 768px)
+                        flex: 0 0 100%
+                        max-width: 100%
                     p
                         font-size: r(11px)
                         margin-bottom: 0
@@ -41,17 +50,19 @@
                     .settingcontrol
                         flex-direction: row
                         label
-                            margin: 0 1rem 0 13%
+                            margin: 0 .5rem 0 13%
                             flex: 0 0 20%
+                            margin-left: auto
                         select,input
                             width: r(120px)
                         select
                             &:nth-child(2)
                                 margin-right: 0
                         @media (max-width: 768px)
-                            flex-direction: row
+                            flex-direction: column
                             label
-                                flex: 0 0 16%
+                                flex: 0 0 100%
+                                margin-left: 0 !important
                             select,input
                                 width: 100%
                         @media (max-width: 465px)
@@ -62,10 +73,9 @@
                                 &:not(:first-child)
                                     margin-top: 0.5rem
                 &.frm-btnwrap
-                    margin-left: 35%
-                    justify-content: space-between !important
+                    margin-left: 30%
                     .frm-abort
-                        margin-left: 0
+                        margin-left: 30px !important
                     .frm-complete
                         margin-left: 0
                         
@@ -94,6 +104,9 @@
         text-align: center
         width: r(150px)
         margin: auto
+        #ctl00_mainContent_ctl00_txtImageReview 
+            width: auto
+            height: 10.875rem
         h3 
             font-size: r(14px)
             font-weight: 500

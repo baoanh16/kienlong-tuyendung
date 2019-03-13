@@ -1,18 +1,21 @@
 .member-wrapper
     padding: 1.5rem
     background: #f8f8f8
+    border-radius: 5px
+    @media (min-width: 992px)
+        padding: 30px
     .member-avatar
-        width: 100px
-        height: 100px
+        width: 150px
+        height: 150px
         border-radius: 50%
         overflow: hidden
         margin: 0 auto
-        border: 2px solid #0f848d
-        box-shadow: 0 0 5px #0000006b
+        border: 1px solid #0f848d
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
         img
             width: 100%
     .member-name
-        margin-top: 1.5rem
+        margin: 1.25rem 0 1rem 0
         text-align: center
         h5
             font-size: r(16px)
@@ -25,6 +28,9 @@
             li
                 display: flex
                 align-items: baseline
+                margin-bottom: 4px
+                &:last-childd
+                    margin-bottom: 0
                 em
                     color: #0f848d
                     padding-right: .75rem
@@ -33,19 +39,20 @@
                     margin-bottom: 0
                     font-weight: 400
     .member-level
+        margin-top: 1.5rem
         p
             font-size: r(14px)
             font-weight: 400
             margin-bottom: .4rem
         .line-level
-            height: 10px
+            height: 8px
             width: 100%
             position: relative
             background: #e4e4e4
-            border-radius: 10px
+            border-radius: 4px
             span
                 height: 100%
-                border-radius: 10px
+                border-radius: 4px
                 position: absolute
                 top: 0
                 left: 0

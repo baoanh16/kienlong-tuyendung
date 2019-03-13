@@ -65,9 +65,11 @@ html,body
 					font-size: r(15px)
 					text-align: center
 					padding: r(12px)
-					&:first-child
-						text-align: left
-						padding-left: r(32px)
+					font-weight: 400
+					@media (min-width: 992px)
+						white-space: pre-wrap
+						padding-bottom: 0
+						padding-top: 0
 					&:last-child
 						border-right: 0
 					a
@@ -347,3 +349,9 @@ a.edit-link
 				&:hover
 					span, i, em
 						color: #da4251
+
+.RadPicker.RadDateTimePicker.RadPicker_Simple
+	width: 100% !important
+	border: 1px solid #d7d7d7
+	.riTextBox
+		border: 0 !important
