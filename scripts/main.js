@@ -60,8 +60,13 @@ $(document).ready(function () {
 	})
 	if ($(window).width() > 992) {
 		$('.kienlong-quytrinhtuyendung-1 .items-list .item .title').on('mouseover', function () {
-			$(this).next().show()
-			$(this).parent().siblings().children('.content').hide()
+			$(this).next().fadeIn();
+			$(this).next().addClass('active');
+			$(this).parent().siblings().children('.content').fadeOut();
+			$(this).parent().siblings().children('.content').removeClass('active');
+			const height = $('.kienlong-quytrinhtuyendung-1 .ModuleContent').height() 
+			+ $('.kienlong-quytrinhtuyendung-1 .items-list .content.active').outerHeight();
+			$('.kienlong-quytrinhtuyendung-1').css('height', height + 70 + 44);
 		})
 	}
 

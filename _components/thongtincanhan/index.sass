@@ -91,7 +91,7 @@
                         margin-left: 0 !important
                 @media (max-width: 576px)
                     &.frm-btnwrap
-                        .frm-abort,.frm-complete
+                        .frm-abort,.frm-complete, .frm-save
                             margin-left: 0 !important
                 @media (max-width: 465px)
                     &.frm-select
@@ -100,6 +100,9 @@
                                 margin-left: 0
                             select,input
                                 margin: 0.5rem 0 !important
+                @media (min-width: 768px)
+                    &.error
+                        margin-left: 30%
     .upload-img
         text-align: center
         width: r(150px)

@@ -1,6 +1,8 @@
 .kinhnghiem_lamviec
     .wrap-form
         > div[id]
+            h3
+                margin-top: 50px
             .form-group
                 label
                     flex: 0 0 30%
@@ -21,6 +23,11 @@
                                 margin-left: 0
                             select,input
                                 width: 100%
+                @media (max-width: 768px)
+                    align-items: flex-start
+                    label, .settingcontrol
+                        flex: 0 0 100%
+                        width: 100%
                 &.frm-btnwrap
                     margin-left: 30%
                 @media (max-width: 768px)
