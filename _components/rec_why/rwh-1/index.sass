@@ -51,6 +51,7 @@
 				padding: 0px 24px
 				line-height: r(24px)
 				font-size: 16px
+				transition: .3s ease-in-out
 			&:after
 				opacity: .9
 				background-image: linear-gradient( -45deg, rgb(15,132,141) 0%, rgb(0,80,110) 100%)
@@ -59,6 +60,30 @@
 				content: ""
 				width: 100%
 				height: 100%
+		.info
+			position: absolute
+			width: 100%
+			height: 0
+			overflow: hidden
+			top: 0
+			left: 0
+			padding: 15px
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			color: #ffffff
+			font-size: 16px
+			box-sizing: border-box
+			opacity: 0
+			transition: .3s ease-in-out
+		&:hover
+			h4
+				opacity: 0
+			.info
+				height: 100%
+				opacity: 1
+
 	.big-reason
 		height: 100%
 		padding: 1rem
@@ -69,9 +94,11 @@
 			margin-bottom: 1.5rem
 			height: initial
 		.icon
+			transition: .5s ease-in-out
 			i
 				color: #ffffff
 				font-size: 5rem
+				transition: .5s ease-in-out
 		.quote
 			color: #ffffff
 			display: flex
@@ -91,7 +118,9 @@
 			p
 				font-size: 16px
 				font-weight: 300
-
+		&:hover
+			.icon
+				transform: rotateY(180deg)
 	.col.text-center
 		display: flex
 		align-items: center

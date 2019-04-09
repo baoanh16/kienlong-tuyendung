@@ -1,5 +1,6 @@
 .kienlong-quytrinhtuyendung-1
     padding-top: 42px
+    padding-bottom: 48px
     h2
         font-size: r(30px)
         text-align: center
@@ -31,7 +32,7 @@
         .item
             position: relative
             .title
-                width: r(140px)
+                width: 176px
                 height: 100%
                 background: #14a1ad
                 border-radius: 10px
@@ -63,9 +64,10 @@
                     transform: translateX(-50%)
                 img
                     margin-bottom: r(22px)
+                    width: 84px
                 span
                     color: #ffffff
-                    font-size: r(15px)
+                    font-size: r(16px)
                     text-align: center
                     font-weight: 400
                 &:hover
@@ -115,14 +117,24 @@
                     transform: rotate(45deg)
                     border-bottom: 0
                     border-right: 0
-                    left: r(61.5px)
+                    left: 4.84375rem
             &:nth-child(4), &:nth-child(5)
                 .content
                     right: 0
                     left: auto
                     &:before
                         left: auto
-                        right: r(61.5px)
+                        right: 4.84375rem
+            @media (min-width: 1200px)
+                .title
+                    width: 200px !important
+                .content
+                    &:before
+                        left: 5.84375rem
+                &:nth-child(4), &:nth-child(5)
+                    .content
+                        &:before
+                            right: 5.84375rem
             @media (max-width: 992px)
                 .title
                     width: 8rem
